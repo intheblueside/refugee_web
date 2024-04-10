@@ -11,7 +11,10 @@
         <!--bootstrap ver 5-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <style>
+            a {text-decoration: none;}
+        </style>
         
     </head>
     
@@ -62,7 +65,7 @@
                                 <h6 class="text-uppercase fw-bold mb-4">
                                     <i class ="fas fa-gem me-3"></i>Refugee Rights
                                 </h6>
-                                <p>Refugee Rights was established in 1998 during when the Rohingnya crisis became unbearable in Malaysia. </p>
+                                <p>Refugee Rights was established in Malaysia in 1975 when Vietnamese refugees began to arrive by boat in Malaysia and other countries in the region </p>
                             </div>
 
                             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

@@ -6,7 +6,7 @@
         <!--bootstrap ver 5-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
         <title>Home Page</title>
 
         <style>
@@ -83,18 +83,15 @@
             <!--main image slideshow-->
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                        <img src="r1.jpg" alt="test1" style="width:100%">
+                    <img src="r1.jpg" alt="test1" style="width:100%">
                         
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                        <img src="r2.jpg" alt="test2" style="width:100%">
+                    <img src="r2.jpg" alt="test2" style="width:100%">
                         
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                        <img src="r3.jpg" alt="test3" style="width:100%">
+                    <img src="r3.jpg" alt="test3" style="width:100%">
                         
                 </div>
             </div>
@@ -110,35 +107,39 @@
             <!--section for more info-->
 
             <section>
+                <h2>Over 26 million people have fled violence <br>or prosecution in their homecountry</h2>
+                <br><br>
                 <div class="container px-4">
                     <div class="row gx-5">
-
+                    <!--small heading 1-->
                         <div class="col-md mb-5">
                             <div class="thumbnail" style="border:none; background:white;">
                                 <div class="col-md-4 image-fluid">
-                                    <img src="r4.jpg" style="height:200px; margin-left:-15px;" />
+                                    <img src="r4.jpg" alt="refugee image" style="height:200px; margin-left:-15px;" />
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div class="col-md mb-5">
                             <h4 class="mb-5">Who are refugees?</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            <p>Refugees are people who have been forced to flee their home country because of feared persecution, conflict, violence, or other circumstances.</p>
                         </div>
               
                
                     </div>
 
                     <div class="row gx-5">
-
+                        <!--small heading 2-->
                         <div class="col-md mb-5">
                             <h4 class="mb-5">Why should we help them?</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            <p>Without livelihood opportunities to help them earn income, refugees struggle to purchase even the most basic necessities, including the food they need to keep their families healthy and strong.
+                                Even donating the smallest thing could benefit refugees tremendously
+                            </p>
                         </div>
                         <div class="col-md mb-5">
                             <div class="thumbnail" style="border:none; background:white;">
                                 <div class="col-md-4 image-fluid">
-                                    <img src="r5.jpg" style="height:200px; margin-left:-15px;" />
+                                    <img src="r5.jpg" alt="man helping refugees" style="height:200px; margin-left:-15px;" />
                                 </div>
                             </div>
                         </div>
