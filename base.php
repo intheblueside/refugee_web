@@ -115,7 +115,7 @@
                                 <h6 class="text-uppercase fw-bold mb-4">
                                     <i class ="fas fa-gem me-3"></i>Refugee Rights
                                 </h6>
-                                <p>Refugee Rights was established in 1998 during when the Rohingnya crisis became un bearable in Malaysia. </p>
+                                <p>Refugee Rights was established in 1998 during when the Rohingnya crisis became unbearable in Malaysia. </p>
                             </div>
 
                             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
