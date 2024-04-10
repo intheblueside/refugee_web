@@ -21,7 +21,7 @@
         <!--header-->
         <header>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary" id="navbarNav">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-body-tertiary" id="navbarNav">
                 <div class="container-fluid">
                     <!--logo-->
                     <a class="navbar-brand" href="#">
@@ -54,7 +54,7 @@
                                 <a class="nav-link" href="#">Our Rights</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Donate</a>
+                                <a class="nav-link" href="#">Donate ♡</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact Us</a>
