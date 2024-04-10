@@ -3,17 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--bootstrap ver 5-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Home Page</title>
 
         <style>
-            * {box-sixing: border-box;}
+            * {box-sizing: border-box;}
             body {font-family: Helvetica, sans-serif;}
             .mySlider {display:none;}
             img {vertical-align: middle;}
 
             /* Slideshow container */
             .slideshow-container {
-            max-width: 1000px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             position: relative;
             margin: auto;
             }
@@ -40,8 +46,8 @@
 
             /* The dots/bullets/indicators */
             .dot {
-            height: 15px;
-            width: 15px;
+            height: 8px;
+            width: 8px;
             margin: 0 2px;
             background-color: #bbb;
             border-radius: 50%;
@@ -63,6 +69,7 @@
             from {opacity: .4} 
             to {opacity: 1}
             }
+            h2 {text-align: center;}
         </style>
 
     </head>
@@ -73,6 +80,7 @@
         ?>
         
         <main>
+            <!--main image slideshow-->
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
@@ -80,12 +88,12 @@
                         
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
+                    <div class="numbertext">2 / 3</div>
                         <img src="r2.jpg" alt="test2" style="width:100%">
                         
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
+                    <div class="numbertext">3 / 3</div>
                         <img src="r3.jpg" alt="test3" style="width:100%">
                         
                 </div>
@@ -99,8 +107,51 @@
                 <span class="dot"></span>
             </div>
 
-        </main>
+            <!--section for more info-->
 
+            <section>
+                <div class="container px-4">
+                    <div class="row gx-5">
+
+                        <div class="col-md mb-5">
+                            <div class="thumbnail" style="border:none; background:white;">
+                                <div class="col-md-4 image-fluid">
+                                    <img src="r4.jpg" style="height:200px; margin-left:-15px;" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md mb-5">
+                            <h4 class="mb-5">Who are refugees?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+              
+               
+                    </div>
+
+                    <div class="row gx-5">
+
+                        <div class="col-md mb-5">
+                            <h4 class="mb-5">Why should we help them?</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        </div>
+                        <div class="col-md mb-5">
+                            <div class="thumbnail" style="border:none; background:white;">
+                                <div class="col-md-4 image-fluid">
+                                    <img src="r5.jpg" style="height:200px; margin-left:-15px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </section>
+        </main>
+        
+        
+        <!--js for slideshow-->
         <script>
         let slideIndex = 0;
         showSlides();
@@ -123,6 +174,7 @@
         }
         </script>
 
+        <!--footer take file-->
         <footer>
             <?php 
                 include 'footer.php';
