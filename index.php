@@ -7,70 +7,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
+        <!--custom css-->
+        <link rel="stylesheet" href="styles.css" >
         <title>Home Page</title>
-
-        <style>
-            * {box-sizing: border-box;}
-            body {font-family: Helvetica, sans-serif;}
-            .mySlider {display:none;}
-            img {vertical-align: middle;}
-
-            /* Slideshow container */
-            .slideshow-container {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: relative;
-            margin: auto;
-            }
-
-            /* Caption text */
-            .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-            }
-
-            /* Number text (1/3 etc) */
-            .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-            }
-
-            /* The dots/bullets/indicators */
-            .dot {
-            height: 8px;
-            width: 8px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-            }
-
-            .active {
-            background-color: #717171;
-            }
-
-            /* Fading animation */
-            .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-            }
-
-            @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-            }
-            h2 {text-align: center;}
-        </style>
 
     </head>
     <body>
@@ -84,62 +23,72 @@
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <img src="r1.jpg" alt="test1" style="width:100%">
-                        
+                    
                 </div>
                 <div class="mySlides fade">
                     <img src="r2.jpg" alt="test2" style="width:100%">
-                        
+                    
                 </div>
                 <div class="mySlides fade">
                     <img src="r3.jpg" alt="test3" style="width:100%">
-                        
+                    
                 </div>
+
+                <a class="prev" onclick="plusSlides(-1)"> ❮ </a>
+                <a class="next" onclick="plusSlides(1)"> ❯ </a>
+
             </div>
 
             <br>
 
             <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
             <!--section for more info-->
 
             <section>
-                <h2>Over 26 million people have fled violence <br>or prosecution in their homecountry</h2>
+                <h2 class="text-center mb-4">Over 26 million people have fled violence <br>or prosecution in their homecountry</h2>
                 <br><br>
                 <div class="container px-4">
-                    <div class="row gx-5">
+                    <div class="row align-items-center">
                     <!--small heading 1-->
                         <div class="col-md mb-5">
                             <div class="thumbnail" style="border:none; background:white;">
                                 <div class="col-md-4 image-fluid">
-                                    <img src="r4.jpg" alt="refugee image" style="height:200px; margin-left:-15px;" />
+                                    <img src="r4.jpg" alt="refugee image" style="max-height:300px; margin-left:-15px;" />
                                 </div>
                             </div>
                         </div>
                         
                         <div class="col-md mb-5">
-                            <h4 class="mb-5">Who are refugees?</h4>
+                            <h4 class="mb-3">Who are refugees?</h4>
                             <p>Refugees are people who have been forced to flee their home country because of feared persecution, conflict, violence, or other circumstances.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button" value="Learn More" onclick="stories.php">Learn More</button>
+                            </div>
                         </div>
               
                
                     </div>
 
-                    <div class="row gx-5">
+                    <div class="row align-items-center">
                         <!--small heading 2-->
                         <div class="col-md mb-5">
                             <h4 class="mb-5">Why should we help them?</h4>
                             <p>Without livelihood opportunities to help them earn income, refugees struggle to purchase even the most basic necessities, including the food they need to keep their families healthy and strong.
                                 Even donating the smallest thing could benefit refugees tremendously
                             </p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button">Donate Now</button>
+                            </div>
                         </div>
                         <div class="col-md mb-5">
                             <div class="thumbnail" style="border:none; background:white;">
                                 <div class="col-md-4 image-fluid">
-                                    <img src="r5.jpg" alt="man helping refugees" style="height:200px; margin-left:-15px;" />
+                                    <img src="r5.jpg" alt="man helping refugees" style="max-height:300px; margin-left:-15px;" />
                                 </div>
                             </div>
                         </div>
@@ -154,24 +103,42 @@
         
         <!--js for slideshow-->
         <script>
-        let slideIndex = 0;
-        showSlides();
+        let slideIndex = 1;
+
+        showSlides(slideIndex);
+
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
         function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            
+            /*if (n < 1) {slideIndex = slides.length}*/
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // change slide img every 2 sec
+
+            // function for opening new page
+            function openPage() {
+
+            }
+
         }
         </script>
 

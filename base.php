@@ -49,7 +49,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Our Stories</a>
+                                <a class="nav-link" href="stories.php">Our Stories</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Our Rights</a>
