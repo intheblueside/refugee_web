@@ -24,7 +24,11 @@
             include 'base.php';
         ?>
         <main>
-            <h2 class="text-center">Refugee Stories</h2>
+            <h2 class="text-center display-4">Refugee Stories</h2>
+            <p class="text-center mx-auto">Refugee stories often encapsulate the resilience and courage of individuals forced to flee their homes due to 
+                conflict or persecution. Through their narratives, they shed light on the human spirit's ability to endure adversity and find hope amidst unimaginable 
+                challenges.
+            </p>
             <div class="container">
                 
                 <!--card 1-->
@@ -118,7 +122,7 @@
                                 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -142,7 +146,7 @@
                                 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -168,7 +172,7 @@
                                 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
