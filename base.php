@@ -12,7 +12,7 @@
         <!--bootstrap ver 5-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
         
     </head>
 
@@ -20,13 +20,13 @@
 
         <!--header-->
         <header>
-
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-body-tertiary" id="navbarNav">
-                <div class="container-fluid">
+            
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarNav">
+                <div class="container-fluid" style="margin-top:auto">
                     <!--logo-->
                     <a class="navbar-brand" href="#">
                         <img id="logo" src="logo.png" alt="logo img" loading="lazy" class="me-2" height="100"/>
-                        <small>RefugeeRights</small>
+                        <span class="ms-2">RefugeeRights</span>
                     </a>
 
                     <!--toggle button-->
@@ -42,6 +42,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
+                    <!--nav links -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
@@ -64,7 +65,7 @@
                 </div>
                 
             </nav>
-            
+        
         </header>
 
     </body>
