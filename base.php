@@ -22,7 +22,7 @@
         <header>
             
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarNav">
-                <div class="container-fluid" style="margin-top:auto">
+                <div class="container-fluid" style="margin-top:-10px">
                     <!--logo-->
                     <a class="navbar-brand" href="#">
                         <img id="logo" src="logo.png" alt="logo img" loading="lazy" class="me-2" height="100"/>
@@ -46,7 +46,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="stories.php">Our Stories</a>
