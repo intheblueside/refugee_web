@@ -36,7 +36,7 @@
                     <div class="row justify-content-center align-items-center">
                         <div class="col-md-4">
                             <a href="#" class="image-link1">
-                                <img class="mx-auto d-block" src="daniel.webp" alt="image of man" style="width: 50%;" />
+                                <img class="mx-auto d-block" src="images/daniel.webp" alt="image of man" style="width: 50%;" />
                             </a>
                         </div>
                         <div class="col-md-6">
@@ -54,7 +54,7 @@
                     <div class="row justify-content-center align-items-center">
                         <div class="col-md-4">
                             <a href="#" class="image-link2">
-                                <img class="image-fluid" src="sabri.jpg" alt="image of man" style="width: 100%;" />
+                                <img class="image-fluid" src="images/sabri.jpg" alt="image of man" style="width: 100%;" />
                             </a>
                         </div>
                         <div class="col-md-6">
@@ -72,7 +72,7 @@
                     <div class="row justify-content-center align-items-center">
                         <div class="col-md-4">
                             <a href="#" class="image-link3">
-                                <img class="mx-auto d-block" src="sag.jpg" alt="image of woman" style="width: 65%;" />
+                                <img class="mx-auto d-block" src="images/sag.jpg" alt="image of woman" style="width: 65%;" />
                             </a>
                         </div>
                         <div class="col-md-6">
@@ -110,7 +110,7 @@
 
                         </div>
                         <div class="modal-body">
-                            <img class="image-fluid" src="daniel.webp" alt="man refugee" style="width: 100%;" />
+                            <img class="image-fluid" src="images/daniel.webp" alt="man refugee" style="width: 100%;" />
                             <p class="card-text">Daniel was a teacher from Ethiopia, married his wife in 2005 and was gifted with 4 children.
                                 At one point there were a lot of protests against the governemnt which led to teachers there being arrested.
                                 Daniel was terrified what would happen to him and planned to fled to Australia. In 2013, he applied for a student visa and
@@ -138,7 +138,7 @@
 
                         </div>
                         <div class="modal-body">
-                            <img class="image-fluid" src="sabri.jpg" alt="man refugee" style="width: 100%;" />
+                            <img class="image-fluid" src="images/sabri.jpg" alt="man refugee" style="width: 100%;" />
                             <p class="card-text">Sabri fled his home in Aleppo, Syria and is currently living in Paiania, Greece. 
                                 Sabri shared his story with us through Emfasis, a Greek organization responding to the needs of Syrian refugees in Greece and implementing 
                                 a photography project to help Syrian children address psychological problems. Sabri is 16 years old.
@@ -162,7 +162,7 @@
 
                         </div>
                         <div class="modal-body">
-                            <img class="image-fluid" src="sag.jpg" alt="woman refugee" style="width: 100%;" />
+                            <img class="image-fluid" src="images/sag.jpg" alt="woman refugee" style="width: 100%;" />
                             <p class="card-text">Sagheera is a refugee from Syria and came with her husband and 2 children to seek a brighter and safer future for her family.
                                 Sagheera and her family waited 9 years in a refugee camp before they were able to come to the United States in Spring 2022.
                                 Sagheera was not allowed to go to school when she was growing up and had been mocked often because she was illiterate, 
