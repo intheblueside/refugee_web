@@ -16,6 +16,14 @@
             margin-top: 150px;
             }
 
+            .button {
+            transition-duration: 0.4s;
+            }
+
+            .button:hover {
+            background-color: #04AA6D; /* Green */
+            color: white;
+            }
 
         </style>
 
@@ -200,7 +208,7 @@
             </section>
 
             <!--quiz-->
-            <section>
+            <section style="background-color: #fce8f9;">
                 <div class="container my-5">
                     <div class="row g-2">
                         <div class="col-lg-12 mb-4">
@@ -237,8 +245,11 @@
                                         <input type="radio" name="q4" value="q4-3"> A refugee should be allowed to seek asylum from persecution in other countries<br>
                                     </div>
 
-                                    <!-- Submit button -->
-                                    <button type="submit" id="submitQuiz">Submit Quiz</button>
+                                    <!-- submit button -->
+                                    <div class="mt-4">
+                                        <button type="submit" id="submitQuiz" class="button">Submit Quiz</button>
+                                    </div>
+                                    
                                 </form>
                             </div>
 
@@ -247,7 +258,6 @@
                     </div>
 
                     <!-- modal pop up for results -->
-
                     <div id="quizModal" class="modal">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
