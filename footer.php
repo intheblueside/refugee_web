@@ -80,7 +80,7 @@
                                     <a href="rights.php" class="text-reset">Our Rights</a>
                                 </p>
                                 <p>
-                                    <a href="#!" class="text-reset">Visit Us</a>
+                                    <a href="contact.php" class="text-reset">About Us</a>
                                 </p>
                             </div>
 
@@ -90,13 +90,13 @@
                                     Get Involved
                                 </h6>
                                 <p>
-                                    <a href="#!" class="text-reset">Volunteer</a>
+                                    <a href="donate.php" class="text-reset">Volunteer</a>
                                 </p>
                                 <p>
-                                    <a href="#!" class="text-reset">Donate</a>
+                                    <a href="donate.php" class="text-reset">Donate</a>
                                 </p>
                                 <p>
-                                    <a href="#!" class="text-reset">Support</a>
+                                    <a href="donate.php" class="text-reset">Support</a>
                                 </p>
                             </div>
 

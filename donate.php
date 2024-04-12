@@ -9,6 +9,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
         <title>Donate</title>
+
+        <style>
+            main {
+            
+            margin-top: 150px;
+            }
+        </style>
+
     </head>
 
     <body>
@@ -18,7 +26,19 @@
         include 'base.php';
     ?>
 
-    <main></main>
+    <main>
+        <h2 class="text-center display-4">Help Refugees</h2>
+            <!--section volunteer-->
+            <section id="primary" class="content-area">
+                <div class="container my-5">
+                    <div class="row g-2">
+                        <div class="col-lg-12">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
 
 
     <!-- footer -->

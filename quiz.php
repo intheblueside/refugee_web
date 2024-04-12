@@ -17,8 +17,10 @@ if (isset($_POST["q1"], $_POST["q2"], $_POST["q3"], $_POST["q4"])) {
     // result 
     if ($score >= 3) {
         $result = "Good Job!!";
-    }else {
+    }else if ($score <= 3) {
         $result = "Too bad";
+    } else if ($score = 0) {
+        $result = "No attempt yet!";
     }
 
     // return result as JSON response
