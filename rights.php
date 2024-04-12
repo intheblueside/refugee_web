@@ -204,39 +204,37 @@
                 <div class="container my-5">
                     <div class="row g-2">
                         <div class="col-lg-12 mb-4">
-                            <h4>Quiz: Test Your Understanding</h4>
+                            <h5>Take this short quiz to check your understanding!</h5>
                             <!--form with php-->
                             <div id="quiz">
                                 <form id="quizForm" method="post" action="quiz.php">
                                     <!-- Quiz questions and options -->
-                                    <div class="question">
-                                        <h5>Question 1</h5>
-                                        <input type="radio" name="q1" value="q1-1"> Option 1<br>
-                                        <input type="radio" name="q1" value="q1-2"> Option 2<br>
-                                        <input type="radio" name="q1" value="q1-3"> Option 2<br>
-                                        <!-- Add more options as needed -->
-                                        
+                                    <div class="question mt-4">
+                                        <h6>Why is the 1990 Migrant Workers Rights Important?</h6>
+                                        <input type="radio" name="q1" value="q1-1"> To allow migrants to be tortured at work<br>
+                                        <input type="radio" name="q1" value="q1-2"> To ensure migrants do not work<br>
+                                        <input type="radio" name="q1" value="q1-3"> To protect the jobs for migrants and their families<br>    
                                     </div>
                                     
-                                    <div class="question-two">
-                                        <h5>Question 2</h5>
-                                        <input type="radio" name="q2" value="q2-1"> Option 1<br>
-                                        <input type="radio" name="q2" value="q2-2"> Option 2<br>
-                                        <input type="radio" name="q2" value="q2-3"> Option 2<br>
+                                    <div class="question-two mt-4">
+                                        <h6>Which country did not sign the 1951 Refugee Convention?</h6>
+                                        <input type="radio" name="q2" value="q2-1"> India<br>
+                                        <input type="radio" name="q2" value="q2-2"> Morocco<br>
+                                        <input type="radio" name="q2" value="q2-3"> Bulgaria<br>
                                     </div>
 
-                                    <div class="question-three">
-                                        <h5>Question 2</h5>
-                                        <input type="radio" name="q3" value="q3-1"> Option 1<br>
-                                        <input type="radio" name="q3" value="q3-2"> Option 2<br>
-                                        <input type="radio" name="q3" value="q3-3"> Option 2<br>
+                                    <div class="question-three mt-4">
+                                        <h6>The Universal Declaration of Human Rights has how many articles?</h6>
+                                        <input type="radio" name="q3" value="q3-1"> 93 Articles <br>
+                                        <input type="radio" name="q3" value="q3-2"> 30 Articles <br>
+                                        <input type="radio" name="q3" value="q3-3"> 60 Articles <br>
                                     </div>
 
-                                    <div class="question-four">
-                                        <h5>Question 2</h5>
-                                        <input type="radio" name="q4" value="q4-1"> Option 1<br>
-                                        <input type="radio" name="q4" value="q4-2"> Option 2<br>
-                                        <input type="radio" name="q4" value="q4-3"> Option 2<br>
+                                    <div class="question-four mt-4">
+                                        <h6>Which of the following is not the core principle for the UN Refugee Protocol?</h6>
+                                        <input type="radio" name="q4" value="q4-1"> A refugee should not be returned to a country where they face serious threats<br>
+                                        <input type="radio" name="q4" value="q4-2"> A refugee should be given the chance to return to the country that does not provide freedom<br>
+                                        <input type="radio" name="q4" value="q4-3"> A refugee should be allowed to seek asylum from persecution in other countries<br>
                                     </div>
 
                                     <!-- Submit button -->
@@ -247,12 +245,22 @@
                         </div>
                         
                     </div>
-                    <!-- Modal -->
-                    <div id="quizModal" class="modal" style="display: none;">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal()">&times;</span>
-                            <p id="quizResult"></p>
+
+                    <!-- modal pop up for results -->
+                    <div id="quizModal" class="modal fade" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Quiz Result!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!--<span class="close" onclick="closeModal()">&times;</span>-->
+                                    <p id="quizResult"></p>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </section>
