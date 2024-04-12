@@ -24,7 +24,7 @@
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbarNav">
                 <div class="container-fluid" style="margin-top:-10px">
                     <!--logo-->
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.php">
                         <img id="logo" src="images/logo.png" alt="logo img" loading="lazy" class="me-2" height="100"/>
                         <span class="ms-2">RefugeeRights</span>
                     </a>
