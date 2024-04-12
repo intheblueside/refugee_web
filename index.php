@@ -22,15 +22,15 @@
             <!--main image slideshow-->
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="r1.jpg" alt="test1" style="width:100%">
+                    <img src="images/r1.jpg" alt="test1" style="width:100%">
                     
                 </div>
                 <div class="mySlides fade">
-                    <img src="r2.jpg" alt="test2" style="width:100%">
+                    <img src="images/r2.jpg" alt="test2" style="width:100%">
                     
                 </div>
                 <div class="mySlides fade">
-                    <img src="r3.jpg" alt="test3" style="width:100%">
+                    <img src="images/r3.jpg" alt="test3" style="width:100%">
                     
                 </div>
 
@@ -58,7 +58,7 @@
                         <div class="col-md mb-5">
                             <div class="thumbnail" style="border:none; background:white;">
                                 <div class="col-md-4 image-fluid">
-                                    <img src="r4.jpg" alt="refugee image" style="max-height:300px; margin-left:-15px;" />
+                                    <img src="images/r4.jpg" alt="refugee image" style="max-height:300px; margin-left:-15px;" />
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                         <div class="col-md mb-5">
                             <div class="thumbnail" style="border:none; background:white;">
                                 <div class="col-md-4 image-fluid">
-                                    <img src="r5.jpg" alt="man helping refugees" style="max-height:300px; margin-left:-15px;" />
+                                    <img src="images/r5.jpg" alt="man helping refugees" style="max-height:300px; margin-left:-15px;" />
                                 </div>
                             </div>
                         </div>
