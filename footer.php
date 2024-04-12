@@ -74,10 +74,10 @@
                                     Content
                                 </h6>
                                 <p>
-                                    <a href="#!" class="text-reset">Our Stories</a>
+                                    <a href="stories.php" class="text-reset">Our Stories</a>
                                 </p>
                                 <p>
-                                    <a href="#!" class="text-reset">Our Rights</a>
+                                    <a href="rights.php" class="text-reset">Our Rights</a>
                                 </p>
                                 <p>
                                     <a href="#!" class="text-reset">Visit Us</a>

@@ -25,7 +25,7 @@
                 <div class="container-fluid" style="margin-top:-10px">
                     <!--logo-->
                     <a class="navbar-brand" href="#">
-                        <img id="logo" src="logo.png" alt="logo img" loading="lazy" class="me-2" height="100"/>
+                        <img id="logo" src="images/logo.png" alt="logo img" loading="lazy" class="me-2" height="100"/>
                         <span class="ms-2">RefugeeRights</span>
                     </a>
 
@@ -52,7 +52,7 @@
                                 <a class="nav-link" href="stories.php">Our Stories</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Our Rights</a>
+                                <a class="nav-link" href="rights.php">Our Rights</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Donate ♡</a>
