@@ -248,7 +248,7 @@
                         
                     </div>
                     <!-- Modal -->
-                    <div id="quizModal" class="modal">
+                    <div id="quizModal" class="modal" style="display: none;">
                         <div class="modal-content">
                             <span class="close" onclick="closeModal()">&times;</span>
                             <p id="quizResult"></p>
@@ -267,7 +267,7 @@
                     event.preventDefault();
                     var formData = new FormData(this);
             
-                    fetch("quiz_processor.php", {
+                    fetch("quiz.php", {
                         method: "POST",
                         body: formData
                     })
