@@ -247,10 +247,19 @@
                     </div>
 
                     <!-- modal pop up for results -->
+
                     <div id="quizModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal()">&times;</span>
-                            <p id="quizResult"></p>
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Results</h5>
+                                    <button type="button" class="btn-close" onclick="closeModal()" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <p id="quizResult"></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
