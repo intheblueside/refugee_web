@@ -32,6 +32,10 @@
                 margin-right: 10px; 
             }
 
+            .ul-refugee-cont li {
+                margin-bottom: 15px;
+            }
+
             .card.shadow:hover {
             border: none;
             border-radius: 15px;
@@ -86,7 +90,24 @@
             <div class="row mt-4">
                 <div class="col-lg-12">
                     <h4><i>We would love to hear from you, feel free to contact us via any methods as listed below</i></h4><hr>
+                    <div class="image-fluid">
+                        <img src="images/contact.jpg" src="woman calling" style="width: 100%;">
+                    </div>
+                    
                 </div>
+            </div>
+
+            <div class="row mt-4">
+                <!--section refugee-->
+                <section>
+                    <h4>Are you a refugee?</h4>
+                    <ul class="ul-refugee-cont">
+                        <li>Please contact our national organization directly by email, phone, or in person.</li>
+                        <li>If your current country of residence is the United States, please visit the Immigration Law Help website for more resources.</li>
+                        <li>Please visit the Refugee Rights in Exile Programme website for more resources.</li>
+                    </ul>
+                    <hr>
+                </section>
             </div>
         </div>
             <!--section volunteer-->
