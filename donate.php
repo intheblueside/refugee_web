@@ -33,7 +33,12 @@
                 <div class="container my-5">
                     <div class="row g-2">
                         <div class="col-lg-12">
-
+                            <h5>You can support refugee rights by donating to RefugeeRights, giving refugees the help for safety
+                                and opportunity and also bringing them closer to their freedom
+                            </h5>
+                            <div class="image-fluid">
+                                <img src="images/happy.jpg" alt="happy refugee children" style="width: 100%;">
+                            </div>
                         </div>
                     </div>
                 </div>
