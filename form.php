@@ -80,6 +80,17 @@
                             <label for="lastname" class="form-label">Last Name</label>
                             <input required type="text" class="form-control" id="lastname" aria-describedby="user-last-name">
                         </div>
+
+                        <div class="mb-3">
+                            <label for="suffix" class="form-label">Suffix</label>
+                            <select class="form-select mb-3" id="suffix" aria-label="Default select example">
+                                <option selected>Select One</option>
+                                <option value="1">Mr</option>
+                                <option value="2">Mrs</option>
+                                <option value="3">Ms</option>
+                                <option value="4">Dr</option>
+                            </select>
+                        </div>
                         
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -96,7 +107,21 @@
                             <label for="comment" class="form-label">Comment</label>
                             <textarea name="comment" rows="5" cols="40" class="form-control" id="comment" aria-describedby="user-comment"></textarea>
                         </div>
-                        
+
+                        <div class="mb-3">
+                            <label for="information" class="form-label">How did you hear about us?</label>
+                            <select class="form-select mb-3" id="information" aria-label="Default select example">
+                                <option selected>Select One</option>
+                                <option value="1">Search Engine</option>
+                                <option value="2">Social Media</option>
+                                <option value="3">News (e.g newspaper)</option>
+                                <option value="4">Charity portal</option>
+                                <option value="5">Word of mouth</option>
+                                <option value="6">Other</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
 
                     </div>
 
