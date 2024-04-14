@@ -174,7 +174,7 @@
 
         <!--modal popup card 3-->
         <div class="modal fade" id="petitionModal" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalLabelOne">Sign the petition</h5>
@@ -183,8 +183,16 @@
                     </div>
                     <div class="modal-body">
                         <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
-                        <p class="card-text">yaya 
+                        <p class="card-text">The right to petition permits us to ask government to take action to address a need or concern. While it doesn't guarantee a desired result
+                            it does ensure a  level of participation in the democratic process.
                         </p>
+                        <p>Add your name to the petition to support renewing the Malaysian commitment to refugees and a robust increase in annual refugee admissions.</p>
+                        <p>Below are a few petition's that would love to get your support!</p>
+                        <ul>
+                            <li> Give Refugees the Right to Work in Malaysia -> <a href="https://www.change.org/p/the-government-of-malaysia-refugees-right-to-work-in-malaysia">Sign Here</a></li>
+                            <li> Hold a referendum on the Refugee Convention referendum at the general election -> <a href="https://petition.parliament.uk/petitions/648938">Sign Here</a></li>
+                            <li> Provide advocacy for refugees to protect them in court -> <a href="#">Sign Here</a></li>
+                        </ul>
                             
                     </div>
                     <div class="modal-footer">
