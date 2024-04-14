@@ -24,6 +24,28 @@
 
     <body>
 
+    <?php
+    $firstErr = $lastErr = $emailErr = $contactErr = $commentErr = $suffixErr = $howErr = "";
+    $first = $last = $email = $contact = $comment = $suffix = $how = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["firstname"])) {
+            $firstErr = "Name is required!!";
+        } else {
+            $first = test_input($_POST["firstname"]);
+            
+        }
+    }
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+?>
+
         <!--no header-->
         <div class="container my-5">
             <div class="row">
@@ -51,78 +73,102 @@
                         </div>
 
                         <h4 class="section-header-container">Select your one-time amount</h4>
-                        <div class="amount-container">
+                        <div class="mb-3 form-check">
                             <button type="button">$250</button>
                             <button type="button">$150</button>
                             <button type="button">$100</button>
                             <button type="button">$50</button>
                             <button type="button">$25</button>
-                            <input type="number" id="amount"/>
+                            <!--user input amount-->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" id="amount"/>
+                                <span class="input-group-text">.00</span>
+                            </div>
+                            
                         </div>
 
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="check-donate">
-                            <label class="form-check-label" for="exampleCheck1">To give in memory or honor of someone special</label>
+                            <label class="form-check-label" for="check-donate">To give in memory or honor of someone special</label>
                         </div>
 
                         <!--form-->
                         <hr>
                         <h4>Your Infomation</h4>
                         <p><span class="error"> * required field</span></p>
-                        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"></form>
+                        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 
-                        <div class="mb-3">
-                            <label for="firstname" class="form-label">First Name</label>
-                            <input required type="text" class="form-control" id="firstname" aria-describedby="user-first-name">
-                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
 
-                        <div class="mb-3">
-                            <label for="lastname" class="form-label">Last Name</label>
-                            <input required type="text" class="form-control" id="lastname" aria-describedby="user-last-name">
-                        </div>
+                                <div class="form-group col-md-6">
+                                    <label for="firstname" class="form-label">First Name
+                                    <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="user-first-name">
+                                    </label><span class="error">* <?php echo $firstErr; ?> </span> 
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label for="lastname" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="user-last-name">
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="suffix" class="form-label">Suffix</label>
+                                    <select class="form-select mb-3" id="suffix" name="suffix" aria-label="Default select example">
+                                        <option selected>Select One</option>
+                                        <option value="1">Mr</option>
+                                        <option value="2">Mrs</option>
+                                        <option value="3">Ms</option>
+                                        <option value="4">Dr</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="contactnum" class="form-label">Contact Number</label>
+                                    <input type="number" class="form-control" id="contactnum" name="contact" aria-describedby="user-contact">
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="comment" class="form-label">Comment</label>
+                                    <textarea name="comment" rows="5" cols="40" class="form-control" id="comment" name="comment" aria-describedby="user-comment"></textarea>
+                                </div>
+        
+                                <div class="col-md-6">
+                                    <label for="information" class="form-label">How did you hear about us?</label>
+                                    <select class="form-select mb-3" id="information" name="how" aria-label="Default select example">
+                                        <option selected>Select One</option>
+                                        <option value="1">Search Engine</option>
+                                        <option value="2">Social Media</option>
+                                        <option value="3">News (e.g newspaper)</option>
+                                        <option value="4">Charity portal</option>
+                                        <option value="5">Word of mouth</option>
+                                        <option value="6">Other</option>
+                                    </select>
+                                </div>
+        
+                                <hr>
+                                <div class="col-md-6">
+                                    <div id="amountDetails" class="form-text">One-time donation</div>
+                                    <label for="amount" class="form-label">$0.00 USD</label>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="check-donate">
+                                    <label class="form-check-label" for="exampleCheck1">I confirm that all information in here are accurate</label>
+                                </div>
+                                <button type="submit" name="submit" class="btn btn-primary">Pay Now</button>
+        
+                            </div>
+                        </form>
 
-                        <div class="mb-3">
-                            <label for="suffix" class="form-label">Suffix</label>
-                            <select class="form-select mb-3" id="suffix" aria-label="Default select example">
-                                <option selected>Select One</option>
-                                <option value="1">Mr</option>
-                                <option value="2">Mrs</option>
-                                <option value="3">Ms</option>
-                                <option value="4">Dr</option>
-                            </select>
-                        </div>
+
                         
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="contactnum" class="form-label">Contact Number</label>
-                            <input required type="number" class="form-control" id="contactnum" aria-describedby="user-contact">
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="comment" class="form-label">Comment</label>
-                            <textarea name="comment" rows="5" cols="40" class="form-control" id="comment" aria-describedby="user-comment"></textarea>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="information" class="form-label">How did you hear about us?</label>
-                            <select class="form-select mb-3" id="information" aria-label="Default select example">
-                                <option selected>Select One</option>
-                                <option value="1">Search Engine</option>
-                                <option value="2">Social Media</option>
-                                <option value="3">News (e.g newspaper)</option>
-                                <option value="4">Charity portal</option>
-                                <option value="5">Word of mouth</option>
-                                <option value="6">Other</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-
                     </div>
 
                 </div>
