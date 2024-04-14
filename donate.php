@@ -120,8 +120,24 @@
                     </div>
                     <div class="modal-body">
                         <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
-                        <p class="card-text">yaya 
+                        <p class="card-text">Volunteers are vital in our organizations, thus we welcome anyone who is willing to give us a lending hand! 
+                            Applications are accepted on a rolling basis, with new volunteer advocate programs begin two to three times per year. 
                         </p>
+                        <p><i><u>Open Volunteer Positions</u></i></p>
+                        <ul>
+                            <li> Volunteer Legal Advocate</li>
+                            <li> Volunteer Support</li>
+                            <li> Volunteer Communicatior</li>
+                            <li> Volunteer Administrator</li>
+                        </ul>
+                        <p><i><u>Benefits of being a volunteer at RefugeeRights</u></i></p>
+                        <ul>
+                            <li> Play a key role in protecting and ensuring refugee rights</li>
+                            <li> Sharpen your advocacy skills through daily interaction with clients</li>
+                            <li>Understand the range of local, national, and international players in the human rights arena</li>
+                        </ul>
+
+                        <p>Interested individuals may send an email to <a href="#">refugeerights@example.com</a> </p>
                             
                     </div>
                     <div class="modal-footer">
