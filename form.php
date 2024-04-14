@@ -144,7 +144,7 @@
                         <hr>
                         <h4>Your Infomation</h4>
                         <p><span class="error"> * required field</span></p>
-                        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="showModal()">
 
                         <div class="form-group">
                             <div class="col-md-6">
@@ -217,11 +217,11 @@
                                     <label class="form-check-label" for="confirmCheck" name="check-donate">I confirm that all information in here are accurate</label>
                                     <span class="error">* <?php echo $checkErr; ?> </span>
                                 </div>
-                                <button type="submit" name="submit" class="btn btn-primary">Pay Now</button>
+                                <button type="submit" name="submit" class="btn btn-primary" id="paynowButton">Pay Now</button>
         
                             </div>
                         </form>
-
+                        
 
                         
                     </div>
@@ -230,11 +230,65 @@
             </div>
         </div>
 
-        <script>
+        
+        <div class="modal fade" id="paynowModal" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabelTitle">Thank you for donating to RefugeeRights</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
+                    </div>
+                    <div class="modal-body">
+                        <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
+                        <p class="card-text">Donate today, and save a life!
+                        </p>
+                        <p>You can support refugee rights by donating and giving refugees and their families access to safety and opportunity and also advancing transformative changes to the law that will benefit everyone.</p>
+                        
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--javascript-->
+        <script>
+            // js to get amount to eb donated 
             function updateAmount(amount) {
                 document.getElementById("amountLabel").textContent = "$" + parseFloat(amount).toFixed(2) + " USD";
             }
+
+            /*to show modal when click submit button
+            function showModal () { 
+
+                document.getElementById("payNowButton").addEventListener("click", function() {
+                    //call php values
+                    <?php
+                    echo "var firstName = '" . $first . "';";
+                    echo "var lastName = '" . $last . "';";
+                    echo "var email = '" . $email . "';";
+                    echo "var amount = '" . $amount . "';"; 
+                    ?>
+
+                    // set modal
+                    var modalTitle = document.getElementById("modalLabelTitle");
+                    modalTitle.innerHTML = "Confirmation for " + firstname; 
+
+                    var modalBody = document.querySelector("#paynowModal .modal-body");
+                    modalBody.innerHTML = "Thank you, " + firstName + ", for your donation of $" + amount + ".<br>";
+                    modalBody.innerHTML += "A confirmation email will be sent to " + email + ".";
+
+                    // Show the modal
+                    var modal = new bootstrap.Modal(document.getElementById("paynowModal"));
+                    modal.show();
+                });
+
+            }*/
+
+
         </script>
 
     </body>

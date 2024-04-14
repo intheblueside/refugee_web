@@ -175,7 +175,7 @@
                         <p class="card-text">Donate today, and save a life!
                         </p>
                         <p>You can support refugee rights by donating and giving refugees and their families access to safety and opportunity and also advancing transformative changes to the law that will benefit everyone.</p>
-                        <a href="#" class="btn btn-primary">Donate Now</a>
+                        <a href="form.php" class="btn btn-primary">Donate Now</a>
                         <p>Other ways to donate:</p>
                         <ul class="ul-donation-info">
                             <li><i class="bi bi-pencil-square"></i> To donate via check, send a check made out to RefugeeRights to 35 Jalan Sakura, 4 Taman Sakura, Bayan Lepas, 11900 Penang</li>
