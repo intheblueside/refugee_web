@@ -18,6 +18,17 @@
             
             margin-top: 150px;
             }
+
+            .ul-donation-info {
+                list-style: none;
+                padding-left: 2px;
+                padding-right: 5px;
+            }
+
+            .ul-donation-info li {
+                margin-bottom: 5px;
+                margin-right: 10px; 
+            }
         </style>
 
     </head>
@@ -74,7 +85,7 @@
                                     <h5 class="card-title">Donate</h5>
                                     <p class="card-text">By donating to RefugeeRights, you will provide refugees with ongoing relief and protection and help them regain hope for a better future.</p>
                                     
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donateModal">Learn More</a>
+                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donateModal">Donate Now</a>
                                 </div>
                                 
                             </div>
@@ -114,7 +125,7 @@
 
         <!--modal popup card 1-->
         <div class="modal fade" id="volunteerModal" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalLabelOne">Volunteering with RefugeeRights</h5>
@@ -152,7 +163,7 @@
 
         <!--modal popup card 2-->
         <div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalLabelOne">Donate to RefugeeRights</h5>
@@ -161,9 +172,17 @@
                     </div>
                     <div class="modal-body">
                         <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
-                        <p class="card-text">yaya 
+                        <p class="card-text">Donate today, and save a life!
                         </p>
-                            
+                        <p>You can support refugee rights by donating and giving refugees and their families access to safety and opportunity and also advancing transformative changes to the law that will benefit everyone.</p>
+                        <a href="#" class="btn btn-primary">Donate Now</a>
+                        <p>Other ways to donate:</p>
+                        <ul class="ul-donation-info">
+                            <li><i class="bi bi-pencil-square"></i> To donate via check, send a check made out to RefugeeRights to 35 Jalan Sakura, 4 Taman Sakura, Bayan Lepas, 11900 Penang</li>
+                            <li><i class="bi bi-bar-chart"></i> To donate stocks or bonds to RefugeeRights, please email Melissa Zaidy our Director at <a href="#">mellissazaidy@example.com</a></li>
+                            <li><i class="bi bi-heart-fill"></i> To donate second-hand items to RefugeeRights, please post it to our address or drop it in our office by <a href="contact.php">Contacting Us</a></li>
+                        </ul>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

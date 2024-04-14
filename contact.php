@@ -26,9 +26,6 @@
 
             .ul-location-info li {
                 margin-bottom: 5px;
-            }
-
-            .ul-location-info li i {
                 margin-right: 10px; 
             }
 
