@@ -4,9 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--bootstrap ver 5-->
+        <!--bootstrap ver 5-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         
         <title>Donate</title>
 
@@ -193,7 +196,7 @@
 
         <!--modal popup card 4-->
         <div class="modal fade" id="partnerModal" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalLabelOne">Partner with RefugeeRights</h5>
@@ -202,9 +205,32 @@
                     </div>
                     <div class="modal-body">
                         <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
-                        <p class="card-text">yaya 
+                        <p class="card-text">We know there are many people who share our passion for creating a world where all refugees can live safely, move freely, work and go to school. 
+                            We want you to partner with us! Please see the sections below to explore possibilities:
                         </p>
-                            
+                        <p><i>Funding</i></p>
+                        <p>If you are a representative of a foundation or grant-making organization, please feel free to contact our Development Director
+                            Melissa Zaidy, at <a href="#">melissazai@example.com</a> to discuss funding partnership opportunities to protect and advance refugee rights
+                        </p>
+                        <p><i>Education</i></p>
+                        <p>If you are a teacher or lecturer teaching about refugee issues and would like to request a member of our team 
+                            to share about our work or field questions from your students about refugee rights, feel free to get in touch with our HeadQuarters through our 
+                            <a href="contact.php">Contact Us</a> page.
+                        </p>
+                        <p><i>Advocacy</i></p>
+                        <p>We believe that significant, systemic change is needed in how we support people who have been forcibly displaced from their home countries. If you are a representative
+                            of a human rights organization or group and would like to work on advocacy initiatives to advance changes, please <a href="contact.php">Contact Us</a>
+                        </p>
+                        <p><i>Media Appearancce</i></p>
+                        <p>We are well versed at providing expert and on-the-ground insight into the issues that affect refugees and migrants.
+                        If you are a journalist, radio host or podcast host and would like to interview a member of Asylum Access about our work
+                        or about issues affecting refugees and migrants, please email us at <a href="#">refugeerights@example.com</a></p>
+                        <p><i>Didn't find what you were looking for?</i></p>
+                        <p>We are always looking for opportunities to partner with leading organizations that support refugees. 
+                            Feel free to email us at <a href="#">refugeerights@example.com</a>
+                        </p>
+
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
