@@ -31,6 +31,35 @@
                 background-color: lavenderblush;
             }
 
+            button {
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                
+            }
+
+            .button-type-1, .button-type-2, .button-am-1, .button-am-2, .button-am-3, .button-am-4, .button-am-5 {
+                background-color: white; 
+                color: black; 
+                border: 2px solid maroon;
+            }
+
+            .button-type-1:hover, .button-type-2:hover, .button-am-1:hover, .button-am-2:hover, .button-am-3:hover, .button-am-4:hover, .button-am-5:hover {
+                background-color: maroon; 
+                color: white; 
+            }
+
+            .button-type-2:clicked {
+                background-color: maroon; 
+                color: white; 
+            }
+
+
         </style>
     </head>
 
@@ -113,25 +142,47 @@
 
                     <!--form-->
                     <div class="form-row">
-                        <h4 class="section-header-container">Choose your gift type</h4>
+                        <h4 class="section-header-container text-center">Choose your gift type</h4>
                         <div class="type-container">
-                            <button type="button">One-Time</button>
-                            <button type="button">Monthly</button>
+                            <div class="mb-3 row">
+                                <div class="col">
+                                    <button type="button" value="onetime" class="button-type-1" id="button-type-1">One-Time</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" value="monthly" class="button-type-2" id="button-type-2">Monthly</button>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <h4 class="section-header-container">Select your one-time amount</h4>
+                        <h4 class="section-header-container text-center">Select your one-time amount</h4>
                         <div class="mb-3 form-check">
-                            <button type="button" onclick="updateAmount(250)">$250</button>
-                            <button type="button" onclick="updateAmount(150)">$150</button>
-                            <button type="button" onclick="updateAmount(100)">$100</button>
-                            <button type="button" onclick="updateAmount(50)">$50</button>
-                            <button type="button" onclick="updateAmount(25)">$25</button>
-                            <!--user input amount-->
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">$</span>
-                                <input type="text" class="form-control" id="amountInput" aria-describedby="user-entered-amount" oninput="updateAmount(this.value)">
-                                <span class="input-group-text">.00</span>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" onclick="updateAmount(250)" class="button-am-1">RM 250</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" onclick="updateAmount(150)" class="button-am-2">RM 150</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" onclick="updateAmount(100)" class="button-am-3">RM 100</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" onclick="updateAmount(50)" class="button-am-4">RM 50</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" onclick="updateAmount(25)" class="button-am-5">RM 25</button>
+                                </div>
+                                <div class="col">
+                                    <!--user input amount-->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">$</span>
+                                        <input type="text" class="form-control" id="amountInput" aria-describedby="user-entered-amount" oninput="updateAmount(this.value)">
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+                                </div>
                             </div>
+                            
                             
                         </div>
 
@@ -210,7 +261,7 @@
                                     <hr>
                                     <div class="col-md-6">
                                         <div id="amountDetails" class="form-text">One-time donation</div>
-                                        <label for="amount" class="form-label" id="amountLabel"><b>$0.00 USD</b></label>
+                                        <label for="amount" class="form-label" id="amountLabel"><b>0.00 MYR</b></label>
                                         
                                         <div class="mb-3 form-check">
                                             <input type="checkbox" class="form-check-input" id="check-donate">
@@ -218,8 +269,11 @@
                                             <span class="error">* <?php echo $checkErr; ?> </span>
                                         </div>
                                     </div>
-                                    <p>By clicking GIVE, I agree to the Terms of Service and Classy Privacy Policy</p>
+                                    <p>By clicking GIVE, I agree to the <a href="#">Terms of Service</a> and <a href="#">Classy Privacy Policy</a>*</p>
+                                    <div class="mb-3">
                                         <button type="submit" name="submit" class="btn btn-primary" id="paynowButton">GIVE</button>
+                                    </div>
+                                    
                                     
                                 </div>
 
@@ -265,8 +319,37 @@
         <script>
             // js to get amount to eb donated 
             function updateAmount(amount) {
-                document.getElementById("amountLabel").textContent = "$" + parseFloat(amount).toFixed(2) + " USD";
+                document.getElementById("amountLabel").textContent = parseFloat(amount).toFixed(2) + " MYR";
             }
+
+            // change button color for gift type
+            document.addEventListener('DOMContentLoaded', function() {
+                const buttons = document.querySelectorAll('.button-type-1, .button-type-2');
+
+                buttons.forEach((button) => {
+                    button.addEventListener('click', () => {
+                        buttons.forEach((btn) => {
+                            btn.style.backgroundColor = 'white'; // Reset background color for all buttons
+                        });
+                        button.style.backgroundColor = 'red'; // Change background color of the clicked button
+                    });
+                });
+            });
+
+            // change button color for amount
+            document.addEventListener('DOMContentLoaded', function() {
+                const buttons = document.querySelectorAll('.button-am-1, .button-am-2, .button-am-3, .button-am-4, .button-am-5');
+
+                buttons.forEach((button) => {
+                    button.addEventListener('click', () => {
+                        buttons.forEach((btn) => {
+                            btn.style.backgroundColor = 'white'; // Reset background color for all buttons
+                        });
+                        button.style.backgroundColor = 'red'; // Change background color of the clicked button
+                    });
+                });
+            });
+            
 
             /*to show modal when click submit button
             function showModal () { 
