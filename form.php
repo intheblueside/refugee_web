@@ -47,6 +47,8 @@
                 background-color: white; 
                 color: black; 
                 border: 2px solid maroon;
+                margin-bottom: 10px;
+                width: 100%;
             }
 
             .button-type-1:hover, .button-type-2:hover, .button-am-1:hover, .button-am-2:hover, .button-am-3:hover, .button-am-4:hover, .button-am-5:hover {
@@ -57,6 +59,12 @@
             .button-type-2:clicked {
                 background-color: maroon; 
                 color: white; 
+            }
+
+            .input-group {
+                margin-bottom: 10px; 
+                width: 100%;
+                height: 88%;
             }
 
 
@@ -120,6 +128,25 @@
         return $data;
     }
 
+    // check if all are not empty
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($firstErr) && empty($lastErr) && empty($emailErr) && empty($contactErr) && empty($suffixErr) && empty($howErr) && empty($checkErr)) {
+        // Construct modal content with user information
+        $modalContent = "
+            <div class='modal-body'>
+                <p>First Name: $first</p>
+                <p>Last Name: $last</p>
+                <p>Email: $email</p>
+                <p>Contact Number: $contact</p>
+                <p>Suffix: $suffix</p>
+                <p>How did you hear about us?: $how</p>
+                
+            </div>
+        ";
+
+        // Use JavaScript to show the modal
+        echo "<script>showModal('$modalContent');</script>";
+    }
+
 ?>
 
         <!--no header-->
@@ -175,7 +202,7 @@
                                 </div>
                                 <div class="col">
                                     <!--user input amount-->
-                                    <div class="input-group mb-3">
+                                    <div class="input-group">
                                         <span class="input-group-text">$</span>
                                         <input type="text" class="form-control" id="amountInput" aria-describedby="user-entered-amount" oninput="updateAmount(this.value)">
                                         <span class="input-group-text">.00</span>
@@ -195,9 +222,9 @@
                         <hr>
                         <h4>Your Infomation</h4>
                         <p><span class="error"> * required field</span></p>
-                        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="showModal()">
+                            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" id="donationForm">
 
-                        <div class="form-group">
+                            <div class="form-group">
                             
                                 <div class="row">
 
@@ -277,13 +304,8 @@
                                     
                                 </div>
 
-                                <!--amount plus payment-->
-
-                            
-                        </div>
-                    </form>
-                        
-
+                            </div>
+                        </form>
                         
                     </div>
 
@@ -300,7 +322,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" id="modalBody">
                         <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
                         <p class="card-text">Donate today, and save a life!
                         </p>
@@ -329,9 +351,11 @@
                 buttons.forEach((button) => {
                     button.addEventListener('click', () => {
                         buttons.forEach((btn) => {
-                            btn.style.backgroundColor = 'white'; // Reset background color for all buttons
+                            btn.style.backgroundColor = 'white'; // reset background color for all buttons
+                            btn.style.color = 'black';
                         });
-                        button.style.backgroundColor = 'red'; // Change background color of the clicked button
+                        button.style.backgroundColor = 'maroon'; // change background color of the clicked button
+                        btn.style.color = 'white';
                     });
                 });
             });
@@ -343,41 +367,28 @@
                 buttons.forEach((button) => {
                     button.addEventListener('click', () => {
                         buttons.forEach((btn) => {
-                            btn.style.backgroundColor = 'white'; // Reset background color for all buttons
+                            btn.style.backgroundColor = 'white'; 
+                            btn.style.color = 'black';
                         });
-                        button.style.backgroundColor = 'red'; // Change background color of the clicked button
+                        button.style.backgroundColor = 'maroon'; 
                     });
                 });
             });
-            
 
-            /*to show modal when click submit button
-            function showModal () { 
+            // modal 
+            function showModal(content) {
+                document.getElementById('modalBody').innerHTML = content;
+                // Show the modal
+                $('#paynowModal').modal('show');
 
-                document.getElementById("payNowButton").addEventListener("click", function() {
-                    //call php values
-                    <?php
-                    echo "var firstName = '" . $first . "';";
-                    echo "var lastName = '" . $last . "';";
-                    echo "var email = '" . $email . "';";
-                    echo "var amount = '" . $amount . "';"; 
-                    ?>
+            }
 
-                    // set modal
-                    var modalTitle = document.getElementById("modalLabelTitle");
-                    modalTitle.innerHTML = "Confirmation for " + firstname; 
-
-                    var modalBody = document.querySelector("#paynowModal .modal-body");
-                    modalBody.innerHTML = "Thank you, " + firstName + ", for your donation of $" + amount + ".<br>";
-                    modalBody.innerHTML += "A confirmation email will be sent to " + email + ".";
-
-                    // Show the modal
-                    var modal = new bootstrap.Modal(document.getElementById("paynowModal"));
-                    modal.show();
-                });
-
-            }*/
-
+            document.getElementById('donationForm').addEventListener('submit', function(event) {
+                // Prevent default form submission
+                event.preventDefault();
+                // Show the modal
+                showModal();
+            });
 
         </script>
 
