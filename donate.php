@@ -201,7 +201,7 @@
 
                     </div>
                     <div class="modal-body">
-                        <img class="image-fluid" src="images/petiton.jpg" alt="happy children" style="width: 100%;" />
+                        <img class="image-fluid" src="images/petition.jpg" alt="happy children" style="width: 100%;" />
                         <p class="card-text">The right to petition permits us to ask government to take action to address a need or concern. While it doesn't guarantee a desired result
                             it does ensure a  level of participation in the democratic process.
                         </p>

@@ -147,80 +147,87 @@
                         <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="showModal()">
 
                         <div class="form-group">
-                            <div class="col-md-6">
+                            
+                                <div class="row">
 
-                                <div class="form-group col-md-6">
-                                    <label for="firstname" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="user-first-name">
-                                    <span class="error">* <?php echo $firstErr; ?> </span> 
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <label for="lastname" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="user-last-name">
-                                    <span class="error">* <?php echo $lastErr; ?> </span>
-                                </div>
-        
-                                <div class="col-md-6">
-                                    <label for="suffix" class="form-label">Suffix</label>
-                                    <select class="form-select mb-3" id="suffix" name="suffix" aria-label="Default select example">
-                                        <option selected>Select One</option>
-                                        <option value="1">Mr</option>
-                                        <option value="2">Mrs</option>
-                                        <option value="3">Ms</option>
-                                        <option value="4">Dr</option>
-                                    </select>
-                                    <span class="error">* <?php echo $suffixErr; ?> </span>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <label for="email" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                    <span class="error">* <?php echo $emailErr; ?> </span>
-                                </div>
-        
-                                <div class="col-md-6">
-                                    <label for="contactnum" class="form-label">Contact Number</label>
-                                    <input type="number" class="form-control" id="contactnum" name="contact" aria-describedby="user-contact">
-                                    <span class="error">* <?php echo $contactErr; ?> </span>
-                                </div>
-        
-                                <div class="col-md-6">
-                                    <label for="comment" class="form-label">Comment</label>
-                                    <textarea name="comment" rows="5" cols="40" class="form-control" id="comment" name="comment" aria-describedby="user-comment"></textarea>
+                                    <div class="form-group col-md-6">
+                                        <label for="firstname" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="user-first-name">
+                                        <span class="error">* <?php echo $firstErr; ?> </span> 
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="lastname" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="user-last-name">
+                                        <span class="error">* <?php echo $lastErr; ?> </span>
+                                    </div>
+            
+                                    <div class="col-md-6">
+                                        <label for="suffix" class="form-label">Suffix</label>
+                                        <select class="form-select mb-3" id="suffix" name="suffix" aria-label="Default select example">
+                                            <option selected>Select One</option>
+                                            <option value="1">Mr</option>
+                                            <option value="2">Mrs</option>
+                                            <option value="3">Ms</option>
+                                            <option value="4">Dr</option>
+                                        </select>
+                                        <span class="error">* <?php echo $suffixErr; ?> </span>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                        <span class="error">* <?php echo $emailErr; ?> </span>
+                                    </div>
+            
+                                    <div class="col-md-6">
+                                        <label for="contactnum" class="form-label">Contact Number</label>
+                                        <input type="number" class="form-control" id="contactnum" name="contact" aria-describedby="user-contact">
+                                        <span class="error">* <?php echo $contactErr; ?> </span>
+                                    </div>
+            
+                                    <div class="col-md-6">
+                                        <label for="information" class="form-label">How did you hear about us?</label>
+                                        <select class="form-select mb-6" id="information" name="how" aria-label="Default select example">
+                                            <option selected>Select One</option>
+                                            <option value="1">Search Engine</option>
+                                            <option value="2">Social Media</option>
+                                            <option value="3">News (e.g newspaper)</option>
+                                            <option value="4">Charity portal</option>
+                                            <option value="5">Word of mouth</option>
+                                            <option value="6">Other</option>
+                                        </select>
+                                        <span class="error">* <?php echo $howErr; ?> </span>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="comment" class="form-label">Comment</label>
+                                        <textarea name="comment" rows="5" cols="40" class="form-control" id="comment" name="comment" aria-describedby="user-comment"></textarea>
+                                        
+                                    </div>
+                                    
+                                    <hr>
+                                    <div class="col-md-6">
+                                        <div id="amountDetails" class="form-text">One-time donation</div>
+                                        <label for="amount" class="form-label" id="amountLabel"><b>$0.00 USD</b></label>
+                                        
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="check-donate">
+                                            <label class="form-check-label" for="confirmCheck" name="check-donate">I confirm that all information in here are accurate</label>
+                                            <span class="error">* <?php echo $checkErr; ?> </span>
+                                        </div>
+                                    </div>
+                                    <p>By clicking GIVE, I agree to the Terms of Service and Classy Privacy Policy</p>
+                                        <button type="submit" name="submit" class="btn btn-primary" id="paynowButton">GIVE</button>
                                     
                                 </div>
-        
-                                <div class="col-md-6">
-                                    <label for="information" class="form-label">How did you hear about us?</label>
-                                    <select class="form-select mb-6" id="information" name="how" aria-label="Default select example">
-                                        <option selected>Select One</option>
-                                        <option value="1">Search Engine</option>
-                                        <option value="2">Social Media</option>
-                                        <option value="3">News (e.g newspaper)</option>
-                                        <option value="4">Charity portal</option>
-                                        <option value="5">Word of mouth</option>
-                                        <option value="6">Other</option>
-                                    </select>
-                                    <span class="error">* <?php echo $howErr; ?> </span>
-                                </div>
-        
-                                <hr>
-                                <div class="col-md-6">
-                                    <div id="amountDetails" class="form-text">One-time donation</div>
-                                    <label for="amount" class="form-label" id="amountLabel">$0.00 USD</label>
-                                    
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="check-donate">
-                                    <label class="form-check-label" for="confirmCheck" name="check-donate">I confirm that all information in here are accurate</label>
-                                    <span class="error">* <?php echo $checkErr; ?> </span>
-                                </div>
-                                <button type="submit" name="submit" class="btn btn-primary" id="paynowButton">Pay Now</button>
-        
-                            </div>
-                        </form>
+
+                                <!--amount plus payment-->
+
+                            
+                        </div>
+                    </form>
                         
 
                         
