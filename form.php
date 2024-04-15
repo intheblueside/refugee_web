@@ -82,6 +82,7 @@
             $firstErr = "First Name is required!!";
         } else {
             $first = test_input($_POST["firstname"]);
+            
         }
 
         if (empty($_POST["lastname"])) {
@@ -382,13 +383,13 @@
                 $('#paynowModal').modal('show');
 
             }
-
+            /*
             document.getElementById('donationForm').addEventListener('submit', function(event) {
                 // Prevent default form submission
                 event.preventDefault();
                 // Show the modal
                 showModal();
-            });
+            });*/
 
         </script>
 

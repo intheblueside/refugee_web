@@ -4,8 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--bootstrap ver 5-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+        <!--bootstrap ver 5-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         
         <!--custom css-->
         <link rel="stylesheet" href="styles.css" >
@@ -67,7 +71,7 @@
                             <h4 class="mb-3">Who are refugees?</h4>
                             <p>Refugees are people who have been forced to flee their home country because of feared persecution, conflict, violence, or other circumstances.</p>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button" value="Learn More" onclick="stories.php">Learn More</button>
+                            <a href="stories.php" class="btn btn-primary">Learn More</a>
                             </div>
                         </div>
               
@@ -82,7 +86,7 @@
                                 Even donating the smallest thing could benefit refugees tremendously
                             </p>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button">Donate Now</button>
+                            <a href="donate.php" class="btn btn-primary">Donate Now</a>
                             </div>
                         </div>
                         <div class="col-md mb-5">

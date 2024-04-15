@@ -25,79 +25,86 @@
             include 'base.php';
         ?>
         <main>
-            <h2 class="text-center display-4">Refugee Stories</h2>
-            <p class="text-center mx-auto">Refugee stories often encapsulate the resilience and courage of individuals forced to flee their homes due to 
-                conflict or persecution. Through their narratives, they shed light on the human spirit's ability to endure adversity and find hope amidst unimaginable 
-                challenges.
-            </p>
-            <div class="container">
-                
-                <!--card 1-->
-                <div class="card mb-4 p-3">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-md-4">
-                            <a href="#" class="image-link1">
-                                <img class="mx-auto d-block" src="images/daniel.webp" alt="image of man" style="width: 50%;" />
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body d-flex flex-column justify-content-center h-100">
-                                <h4 class="card-title">Daniel's Story</h4>
-                                <p class="card-text">Daniel was a teacher at a university in Ethiopia. He is now a permanent resident in Australia but his wife and children are still in Ethiopia</p>
-                                <button type="button" class="btn btn-primary" id="read-more-button1" data-bs-toggle="modal" data-bs-target="#modalOne">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="container my-5">
+                <div class="row g-2">
 
-                <!--card 2-->
-                <div class="card mb-4 p-3">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-md-4">
-                            <a href="#" class="image-link2">
-                                <img class="image-fluid" src="images/sabri.jpg" alt="image of man" style="width: 100%;" />
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body d-flex flex-column justify-content-center h-100">
-                                <h4 class="card-title">Sabri's Story</h4>
-                                <p class="card-text">Sabri fled his home in Aleppo, Syria and is currently living in Paiania, Greece. Sabri is 16 years old</p>
-                                <button type="button" class="btn btn-primary" id="read-more-button2" data-bs-toggle="modal" data-bs-target="#modalTwo">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    
-                <!--card 3-->
-                <div class="card mb-4 p-3">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-md-4">
-                            <a href="#" class="image-link3">
-                                <img class="mx-auto d-block" src="images/sag.jpg" alt="image of woman" style="width: 65%;" />
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body d-flex flex-column justify-content-center h-100">
-                                <h4 class="card-title">Sagheera's Story</h4>
-                                <p class="card-text">Sagheera is a refugee from Syria and came with her husband and 2 children to seek a brighter and safer future for her family.</p>
-                                <button type="button" class="btn btn-primary" id="read-more-button3" data-bs-toggle="modal" data-bs-target="#modalThree">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <div class="col-lg-12">
                 
-                <!--videos embeded youtube-->
-                <h4 class="text-center mb-4">Further Videos to Learn More about refugees</h4>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <iframe width="420" height="345" src="https://www.youtube.com/embed/8bEK6gytwec?si=U-VlUWBeumj-tlLB">
-                        </iframe>
+                    <h2 class="text-center display-4">Refugee Stories</h2>
+                    <p class="text-center mx-auto">Refugee stories often encapsulate the resilience and courage of individuals forced to flee their homes due to 
+                    conflict or persecution. Through their narratives, they shed light on the human spirit's ability to endure adversity and find hope amidst unimaginable 
+                    challenges.
+                    </p>
+                
+                        <!--card 1-->
+                        <div class="card mb-4 p-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-4">
+                                    <a href="#" class="image-link1">
+                                        <img class="mx-auto d-block" src="images/daniel.webp" alt="image of man" style="width: 50%;" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column justify-content-center h-100">
+                                        <h4 class="card-title">Daniel's Story</h4>
+                                        <p class="card-text">Daniel was a teacher at a university in Ethiopia. He is now a permanent resident in Australia but his wife and children are still in Ethiopia</p>
+                                        <button type="button" class="btn btn-primary" id="read-more-button1" data-bs-toggle="modal" data-bs-target="#modalOne">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--card 2-->
+                        <div class="card mb-4 p-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-4">
+                                    <a href="#" class="image-link2">
+                                        <img class="image-fluid" src="images/sabri.jpg" alt="image of man" style="width: 100%;" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column justify-content-center h-100">
+                                        <h4 class="card-title">Sabri's Story</h4>
+                                        <p class="card-text">Sabri fled his home in Aleppo, Syria and is currently living in Paiania, Greece. Sabri is 16 years old</p>
+                                        <button type="button" class="btn btn-primary" id="read-more-button2" data-bs-toggle="modal" data-bs-target="#modalTwo">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <!--card 3-->
+                        <div class="card mb-4 p-3">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-4">
+                                    <a href="#" class="image-link3">
+                                        <img class="mx-auto d-block" src="images/sag.jpg" alt="image of woman" style="width: 65%;" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column justify-content-center h-100">
+                                        <h4 class="card-title">Sagheera's Story</h4>
+                                        <p class="card-text">Sagheera is a refugee from Syria and came with her husband and 2 children to seek a brighter and safer future for her family.</p>
+                                        <button type="button" class="btn btn-primary" id="read-more-button3" data-bs-toggle="modal" data-bs-target="#modalThree">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--videos embeded youtube-->
+                        <h4 class="text-center mb-4">Further Videos to Learn More about refugees</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <iframe width="420" height="345" src="https://www.youtube.com/embed/8bEK6gytwec?si=U-VlUWBeumj-tlLB">
+                                </iframe>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <iframe width="420" height="345" src="https://www.youtube.com/embed/hiujzFNgHcE?si=l9oXubQoZPX-xgce">
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <iframe width="420" height="345" src="https://www.youtube.com/embed/hiujzFNgHcE?si=l9oXubQoZPX-xgce">
-                        </iframe>
-                    </div>
-                </div>
+                </div>    
             </div>
 
 
