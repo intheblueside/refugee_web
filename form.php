@@ -140,7 +140,7 @@
                             <label class="form-check-label" for="check-donate">To give in memory or honor of someone special</label>
                         </div>
 
-                        <!--form-->
+                        <!--form using post as its private information-->
                         <hr>
                         <h4>Your Infomation</h4>
                         <p><span class="error"> * required field</span></p>

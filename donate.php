@@ -65,7 +65,7 @@
                     <!--volunteer card-->
                     <div class="col-lg-3">
                         <div class="card h-100">
-                            <img src="images/happy.jpg" class="card-img-top" alt="volunteer">
+                            <img src="images/volunteer.jpg" class="card-img-top" alt="volunteer">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h5 class="card-title">Volunteer with us</h5>
@@ -79,7 +79,7 @@
                     <!--donate card-->
                     <div class="col-lg-3">
                         <div class="card h-100">
-                            <img src="images/happy.jpg" class="card-img-top" alt="volunteer">
+                            <img src="images/donate.jpg" class="card-img-top" alt="volunteer">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h5 class="card-title">Donate</h5>
@@ -94,7 +94,7 @@
                     <!--petition card-->
                     <div class="col-lg-3">
                         <div class="card h-100">
-                            <img src="images/happy.jpg" class="card-img-top" alt="volunteer">
+                            <img src="images/petition.jpg" class="card-img-top" alt="volunteer">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h5 class="card-title">Sign the petition</h5>
@@ -108,7 +108,7 @@
                     <!--partner card-->
                     <div class="col-lg-3">
                         <div class="card h-100">
-                            <img src="images/happy.jpg" class="card-img-top" alt="volunteer">
+                            <img src="images/partner.jpg" class="card-img-top" alt="volunteer">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h5 class="card-title">Partner with us</h5>
@@ -133,7 +133,7 @@
 
                     </div>
                     <div class="modal-body">
-                        <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
+                        <img class="image-fluid" src="images/volunteer.jpg" alt="happy children" style="width: 100%;" />
                         <p class="card-text">Volunteers are vital in our organizations, thus we welcome anyone who is willing to give us a lending hand! 
                             Applications are accepted on a rolling basis, with new volunteer advocate programs begin two to three times per year. 
                         </p>
@@ -171,7 +171,7 @@
 
                     </div>
                     <div class="modal-body">
-                        <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
+                        <img class="image-fluid" src="images/donate.jpg" alt="happy children" style="width: 100%;" />
                         <p class="card-text">Donate today, and save a life!
                         </p>
                         <p>You can support refugee rights by donating and giving refugees and their families access to safety and opportunity and also advancing transformative changes to the law that will benefit everyone.</p>
@@ -201,7 +201,7 @@
 
                     </div>
                     <div class="modal-body">
-                        <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
+                        <img class="image-fluid" src="images/petiton.jpg" alt="happy children" style="width: 100%;" />
                         <p class="card-text">The right to petition permits us to ask government to take action to address a need or concern. While it doesn't guarantee a desired result
                             it does ensure a  level of participation in the democratic process.
                         </p>
@@ -231,7 +231,7 @@
 
                     </div>
                     <div class="modal-body">
-                        <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
+                        <img class="image-fluid" src="images/partner.jpg" alt="happy children" style="width: 100%;" />
                         <p class="card-text">We know there are many people who share our passion for creating a world where all refugees can live safely, move freely, work and go to school. 
                             We want you to partner with us! Please see the sections below to explore possibilities:
                         </p>
