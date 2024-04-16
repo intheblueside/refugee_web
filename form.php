@@ -17,7 +17,7 @@
 
     </head>
 
-    <body>
+    <body class="form">
 
     <?php
     $firstErr = $lastErr = $emailErr = $contactErr = $suffixErr = $howErr = $checkErr = "";
@@ -175,19 +175,19 @@
                                 <div class="row">
 
                                     <div class="form-group col-md-6">
-                                        <label for="firstname" class="form-label">First Name</label>
+                                        <label for="firstname" class="form-label">First Name</label><span class="error">* <?php echo $firstErr; ?> </span> 
                                         <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="user-first-name">
-                                        <span class="error">* <?php echo $firstErr; ?> </span> 
+                                        
                                     </div>
                                     
                                     <div class="col-md-6">
-                                        <label for="lastname" class="form-label">Last Name</label>
+                                        <label for="lastname" class="form-label">Last Name</label><span class="error">* <?php echo $lastErr; ?> </span>
                                         <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="user-last-name">
-                                        <span class="error">* <?php echo $lastErr; ?> </span>
+                                        
                                     </div>
             
                                     <div class="col-md-6">
-                                        <label for="suffix" class="form-label">Suffix</label>
+                                        <label for="suffix" class="form-label">Suffix</label><span class="error">* <?php echo $suffixErr; ?> </span>
                                         <select class="form-select mb-3" id="suffix" name="suffix" aria-label="Default select example">
                                             <option selected>Select One</option>
                                             <option value="1">Mr</option>
@@ -195,20 +195,20 @@
                                             <option value="3">Ms</option>
                                             <option value="4">Dr</option>
                                         </select>
-                                        <span class="error">* <?php echo $suffixErr; ?> </span>
+                                        
                                     </div>
                                     
                                     <div class="col-md-6">
-                                        <label for="email" class="form-label">Email address</label>
+                                        <label for="email" class="form-label">Email address</label><span class="error">* <?php echo $emailErr; ?> </span>
                                         <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                        <span class="error">* <?php echo $emailErr; ?> </span>
+                                        
                                     </div>
             
                                     <div class="col-md-6">
-                                        <label for="contactnum" class="form-label">Contact Number</label>
+                                        <label for="contactnum" class="form-label">Contact Number</label><span class="error">* <?php echo $contactErr; ?> </span>
                                         <input type="number" class="form-control" id="contactnum" name="contact" aria-describedby="user-contact">
-                                        <span class="error">* <?php echo $contactErr; ?> </span>
+                                        
                                     </div>
             
                                     <div class="col-md-6">
@@ -244,7 +244,7 @@
                                     </div>
                                     <p>By clicking GIVE, I agree to the <a href="#">Terms of Service</a> and <a href="#">Classy Privacy Policy</a>*</p>
                                     <div class="mb-3">
-                                        <button type="submit" name="submit" class="btn btn-primary" id="paynowButton">GIVE</button>
+                                        <button type="submit" name="submit" class="donate" id="paynowButton">GIVE</button>
                                     </div>
                                     
                                     
@@ -272,7 +272,8 @@
                         <img class="image-fluid" src="images/happy.jpg" alt="happy children" style="width: 100%;" />
                         <p class="card-text">Donate today, and save a life!
                         </p>
-                        <p>You can support refugee rights by donating and giving refugees and their families access to safety and opportunity and also advancing transformative changes to the law that will benefit everyone.</p>
+                        <p>Thank you for your kind donation for refugees!</p>
+                        <p>Name: <?php echo $first ?> </p>
                         
 
                     </div>
