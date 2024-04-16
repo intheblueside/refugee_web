@@ -65,6 +65,14 @@
         } else {
             $checkbox = test_input($_POST["check-donate"]);
         }
+
+        /* Check if all validation is complete
+        if (empty($firstErr) && empty($lastErr) && empty($emailErr) && empty($contactErr) && empty($suffixErr) && empty($howErr) && empty($checkErr)) {
+            // Redirect to a new page
+            header("Location: index.php");
+            exit(); // Ensure that no further code is executed after the redirect
+        }
+        */
     }
 
     function test_input($data) {
@@ -74,23 +82,22 @@
         return $data;
     }
 
-    // check if all are not empty
-    if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($firstErr) && empty($lastErr) && empty($emailErr) && empty($contactErr) && empty($suffixErr) && empty($howErr) && empty($checkErr)) {
+    if (empty($firstErr) && empty($lastErr) && empty($emailErr) && empty($contactErr) && empty($suffixErr) && empty($howErr) && empty($checkErr)) {
         // Construct modal content with user information
-        $modalContent = "
-            <div class='modal-body'>
+        echo "valid";
+        $modalContent = "<div class='modal-body'>
                 <p>First Name: $first</p>
                 <p>Last Name: $last</p>
                 <p>Email: $email</p>
                 <p>Contact Number: $contact</p>
                 <p>Suffix: $suffix</p>
                 <p>How did you hear about us?: $how</p>
-                
-            </div>
-        ";
+            </div>";
 
-        // Use JavaScript to show the modal
-        echo "<script>showModal('$modalContent');</script>";
+            echo "<script>showModal();</script>";
+    
+    }else {
+        echo "<script>console.log('Validation failed');</script>";
     }
 
 ?>
@@ -233,18 +240,18 @@
                                     
                                     <hr>
                                     <div class="col-md-6">
-                                        <div id="amountDetails" class="form-text">One-time donation</div>
-                                        <label for="amount" class="form-label" id="amountLabel"><b>0.00 MYR</b></label>
+                                        <div id="amount" class="form-text">One-time donation</div>
+                                        <label for="amountInput" class="form-label" id="amountLabel"><b>0.00 MYR</b></label>
                                         
                                         <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="check-donate">
-                                            <label class="form-check-label" for="confirmCheck" name="check-donate">I confirm that all information in here are accurate</label>
+                                            <input type="checkbox" class="form-check-input" id="check-donate" name="check-donate">
+                                            <label class="form-check-label" for="check-donate" name="check-donate">I confirm that all information in here are accurate</label>
                                             <span class="error">* <?php echo $checkErr; ?> </span>
                                         </div>
                                     </div>
                                     <p>By clicking GIVE, I agree to the <a href="#">Terms of Service</a> and <a href="#">Classy Privacy Policy</a>*</p>
                                     <div class="mb-3">
-                                        <button type="submit" name="submit" class="donate" id="paynowButton">GIVE</button>
+                                        <button type="submit" name="submit" class="donate" id="paynowButton" data-bs-toggle="modal" data-bs-target="#paynowModal">GIVE</button>
                                     </div>
                                     
                                     
@@ -324,18 +331,36 @@
 
             // modal 
             function showModal(content) {
-                document.getElementById('modalBody').innerHTML = content;
-                // Show the modal
+                
                 $('#paynowModal').modal('show');
 
             }
-            /*
+            
             document.getElementById('donationForm').addEventListener('submit', function(event) {
                 // Prevent default form submission
                 event.preventDefault();
-                // Show the modal
-                showModal();
-            });*/
+
+                // Serialize form data
+                var formData = new FormData(this);
+                $.ajax({
+                    type: "POST",
+                    url: window.location.href, // Send data to the same page
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        // Check if PHP validation passed
+                        if (response.trim() === "valid") {
+                            // Show the modal if validation passed
+                            showModal();
+                        } else {
+                            // Handle validation errors if needed
+                            // For example, display an alert
+                            alert("Validation failed. Please check your inputs.");
+                        }
+                    }
+                });
+            });
 
         </script>
 
