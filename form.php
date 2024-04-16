@@ -66,13 +66,13 @@
             $checkbox = test_input($_POST["check-donate"]);
         }
 
-        /* Check if all validation is complete
+        // check if all validation is complete
         if (empty($firstErr) && empty($lastErr) && empty($emailErr) && empty($contactErr) && empty($suffixErr) && empty($howErr) && empty($checkErr)) {
             // Redirect to a new page
-            header("Location: index.php");
+            header("Location: results.php?firstname=$first&lastname=$last&email=$email&contact=$contact&suffix=$suffix&how=$how&comment=$comment");
             exit(); // Ensure that no further code is executed after the redirect
         }
-        */
+        
     }
 
     function test_input($data) {
@@ -81,7 +81,7 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-
+/*
     if (empty($firstErr) && empty($lastErr) && empty($emailErr) && empty($contactErr) && empty($suffixErr) && empty($howErr) && empty($checkErr)) {
         // Construct modal content with user information
         echo "valid";
@@ -99,7 +99,7 @@
     }else {
         echo "<script>console.log('Validation failed');</script>";
     }
-
+*/
 ?>
 
         <!--no header-->
@@ -329,38 +329,13 @@
                 });
             });
 
-            // modal 
+            /* modal 
             function showModal(content) {
                 
                 $('#paynowModal').modal('show');
 
-            }
-            
-            document.getElementById('donationForm').addEventListener('submit', function(event) {
-                // Prevent default form submission
-                event.preventDefault();
-
-                // Serialize form data
-                var formData = new FormData(this);
-                $.ajax({
-                    type: "POST",
-                    url: window.location.href, // Send data to the same page
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    success: function(response) {
-                        // Check if PHP validation passed
-                        if (response.trim() === "valid") {
-                            // Show the modal if validation passed
-                            showModal();
-                        } else {
-                            // Handle validation errors if needed
-                            // For example, display an alert
-                            alert("Validation failed. Please check your inputs.");
-                        }
-                    }
-                });
-            });
+            }*/
+           
 
         </script>
 
