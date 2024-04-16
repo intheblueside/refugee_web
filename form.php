@@ -82,7 +82,6 @@
             $firstErr = "First Name is required!!";
         } else {
             $first = test_input($_POST["firstname"]);
-            
         }
 
         if (empty($_POST["lastname"])) {
