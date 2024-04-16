@@ -9,66 +9,12 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--custom css-->
+        <link rel="stylesheet" href="stylesform.css" >
         
         <title>Donate For Refugees</title>
 
-        <style>
-            .error {
-            color: #FF0000;
-            margin-top: 0.25rem;
-            font-size: 0.875rem;
-            }
-
-            .form-group.row {
-                margin-bottom: 1rem; /* Adjust as needed */
-            }
-
-            .form-group.row .col-sm-3 {
-                text-align: right;
-                padding-top: calc(0.375rem + 1px); /* To vertically center the label */
-            }
-            .row {
-                background-color: lavenderblush;
-            }
-
-            button {
-                padding: 16px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                transition-duration: 0.4s;
-                cursor: pointer;
-                
-            }
-
-            .button-type-1, .button-type-2, .button-am-1, .button-am-2, .button-am-3, .button-am-4, .button-am-5 {
-                background-color: white; 
-                color: black; 
-                border: 2px solid maroon;
-                margin-bottom: 10px;
-                width: 100%;
-            }
-
-            .button-type-1:hover, .button-type-2:hover, .button-am-1:hover, .button-am-2:hover, .button-am-3:hover, .button-am-4:hover, .button-am-5:hover {
-                background-color: maroon; 
-                color: white; 
-            }
-
-            .button-type-2:clicked {
-                background-color: maroon; 
-                color: white; 
-            }
-
-            .input-group {
-                margin-bottom: 10px; 
-                width: 100%;
-                height: 88%;
-            }
-
-
-        </style>
     </head>
 
     <body>
@@ -151,7 +97,7 @@
 
         <!--no header-->
         <div class="container my-5">
-            <div class="row">
+            <div class="row form-page">
                 <div class="col-lg-12">
                     <h2>DONATE TODAY AND SAVE A LIFE</h2><br>
                     <h5>Vulnerable refugees need your help now more than ever, spare a few minutes to help them by donating for their happiness.
