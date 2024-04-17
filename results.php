@@ -18,6 +18,16 @@
             
             margin-top: 150px;
             }
+
+            .results {
+                background-color: lavender;
+            }
+
+            h5 {
+                font-size: 16px;
+                font-family: Helvetica, sans-serif;
+            }
+
         </style>
 
     </head>
@@ -34,22 +44,32 @@
         $how = $_GET['how'] ?? '';
         $comment = $_GET['comment'] ?? '';
 
+        $amount = $_GET['amount'] ?? ''; 
+
+
 
         ?>
         
         <main>
 
-            <div class="container mt-5">
-                <h1>Form Submission Results</h1>
-                <p>Below are the details submitted:</p>
+            <div class="container my-5">
+                <div class="row results px-4">
+                    <div class="col-lg-12">
+                        <h2 class="text-center">Thank you for your donation</h2>
+                        <h4>We are sure that this donation will be very beneficial for our refugees.</h4>
+                        <p>Below are the details submitted:</p>
 
-                <h2>First Name: <?php echo $first ?> </h2>
-                <h2>Last Name: <?php echo $last ?> </h2>
-                <h2>Email   : <?php echo $email ?> </h2>
+                        <h5>First Name: <?php echo $first ?> </h5>
+                        <h5>Last Name: <?php echo $last ?> </h5>
+                        <h5>Email   : <?php echo $email ?> </h5>
+                        <h5>Contact No: <?php echo $contact ?></h5>
+                        <h5>Amount donated: <?php echo $amount ?> MYR</h5>
 
-                <div class="mt-3">
-                    <button onclick="window.print()" class="btn btn-primary">Print</button>
-                    <a href="index.php" class="btn btn-secondary">Close</a>
+                        <div class="mt-3">
+                            <button onclick="window.print()" class="btn btn-primary">Print Summary</button>
+                            <a href="index.php" class="btn btn-secondary">Close</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             
