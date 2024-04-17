@@ -41,7 +41,7 @@
         
         <?php
             
-        // Retrieve form data from URL parameters
+        // retrieve form data from URL parameters
         $first = $_GET['firstname'] ?? '';
         $last = $_GET['lastname'] ?? '';
         $email = $_GET['email'] ?? '';
@@ -49,10 +49,8 @@
         $suffix = $_GET['suffix'] ?? '';
         $how = $_GET['how'] ?? '';
         $comment = $_GET['comment'] ?? '';
-
         $amount = $_GET['amount'] ?? ''; 
-
-
+        $type = $_GET['type'] ?? '';
 
         ?>
         

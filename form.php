@@ -21,7 +21,7 @@
 
     <?php
     $firstErr = $lastErr = $emailErr = $contactErr = $suffixErr = $howErr = $checkErr = $amountErr = "";
-    $first = $last = $email = $contact = $suffix = $how = $checkbox = $amount = "";
+    $first = $last = $email = $contact = $suffix = $how = $checkbox = $amount = $type = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["firstname"])) {
@@ -77,7 +77,7 @@
         if (empty($firstErr) && empty($lastErr) && empty($emailErr) && empty($contactErr) && empty($suffixErr) && empty($howErr) && empty($checkErr)) {
             // Redirect to a new page
             header("Location: results.php?firstname=$first&lastname=$last&email=$email&contact=$contact&suffix=$suffix&how=$how&comment=$comment&amount=$amount");
-            exit(); // Ensure that no further code is executed after the redirect
+            exit(); // ensure that no further code is executed after the redirect
         }
         
     }
@@ -117,10 +117,10 @@
                             <div class="type-container">
                                 <div class="mb-3 row">
                                     <div class="col">
-                                        <button type="button" value="onetime" class="button-type-1" id="button-type-1">One-Time</button>
+                                        <button type="button" value="onetime" class="button-type-1" id="button-type" name="type">One-Time</button>
                                     </div>
                                     <div class="col">
-                                        <button type="button" value="monthly" class="button-type-2" id="button-type-2">Monthly</button>
+                                        <button type="button" value="monthly" class="button-type-2" id="button-type">Monthly</button>
                                     </div>
                                 </div>
 
@@ -260,9 +260,10 @@
         
         <!--javascript-->
         <script>
-            // js to get amount to eb donated 
+            // js to get amount to be donated 
             function updateAmount(amount) {
                 document.getElementById("amountLabel").textContent = parseFloat(amount).toFixed(2) + " MYR";
+
             }
 
 
@@ -277,7 +278,7 @@
                             btn.style.color = 'black';
                         });
                         button.style.backgroundColor = 'maroon'; // change background color of the clicked button
-                        btn.style.color = 'white';
+                        button.style.color = 'white';
                     });
                 });
             });
@@ -293,6 +294,7 @@
                             btn.style.color = 'black';
                         });
                         button.style.backgroundColor = 'maroon'; 
+                        button.style.color = 'white';
                     });
                 });
             });
