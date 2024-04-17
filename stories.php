@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--bootstrap ver 5-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         
         <title>Our Stories</title>
 
@@ -14,6 +16,10 @@
             main {
             
             margin-top: 150px;
+            }
+
+            #stories-p {
+                font-size: 20px;
             }
 
         </style>
@@ -32,7 +38,7 @@
                     <div class="col-lg-12">
                 
                     <h2 class="text-center display-4">Refugee Stories</h2>
-                    <p class="text-center mx-auto">Refugee stories often encapsulate the resilience and courage of individuals forced to flee their homes due to 
+                    <p class="text-center mx-auto" id="stories-p">Refugee stories often encapsulate the resilience and courage of individuals forced to flee their homes due to 
                     conflict or persecution. Through their narratives, they shed light on the human spirit's ability to endure adversity and find hope amidst unimaginable 
                     challenges.
                     </p>
@@ -110,7 +116,7 @@
 
             <!--modal popup card 1-->
             <div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalLabelOne">Daniel's Story</h5>
@@ -119,9 +125,9 @@
                         </div>
                         <div class="modal-body">
                             <img class="image-fluid" src="images/daniel.webp" alt="man refugee" style="width: 100%;" />
-                            <p class="card-text">Daniel was a teacher from Ethiopia, married his wife in 2005 and was gifted with 4 children.
+                            <p class="card-text"><br>Daniel was a teacher from Ethiopia, married his wife in 2005 and was gifted with 4 children.
                                 At one point there were a lot of protests against the governemnt which led to teachers there being arrested.
-                                Daniel was terrified what would happen to him and planned to fled to Australia. In 2013, he applied for a student visa and
+                                Daniel was terrified what would happen to him and planned to fled to Australia. <br>In 2013, he applied for a student visa and
                                 went to Australia. He planned to live for a short time there, yet things got worse as his best friend was tortured and killed in 
                                 prison. He attended a memorial for his friend in Melbourne and someone took photos of Daniel there and put them online. He knew then that it wasn not yet 
                                 safe for him to go home and had to apply for asylum.
@@ -138,7 +144,7 @@
 
             <!--modal popup card 2-->
             <div class="modal fade" id="modalTwo" tabindex="-1" aria-labelledby="modalLabelTwo" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalLabelTwo">Sabri's Story</h5>
@@ -147,9 +153,9 @@
                         </div>
                         <div class="modal-body">
                             <img class="image-fluid" src="images/sabri.jpg" alt="man refugee" style="width: 100%;" />
-                            <p class="card-text">Sabri fled his home in Aleppo, Syria and is currently living in Paiania, Greece. 
+                            <p class="card-text"><br>Sabri fled his home in Aleppo, Syria and is currently living in Paiania, Greece. 
                                 Sabri shared his story with us through Emfasis, a Greek organization responding to the needs of Syrian refugees in Greece and implementing 
-                                a photography project to help Syrian children address psychological problems. Sabri is 16 years old.
+                                a photography project to help Syrian children address psychological problems. <br>Sabri is 16 years old.
                             </p>
                                 
                         </div>
@@ -162,7 +168,7 @@
 
             <!--modal popup card 3-->
             <div class="modal fade" id="modalThree" tabindex="-1" aria-labelledby="modalLabelThree" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalLabelThree">Sagheera's Story</h5>
@@ -171,10 +177,10 @@
                         </div>
                         <div class="modal-body">
                             <img class="image-fluid" src="images/sag.jpg" alt="woman refugee" style="width: 100%;" />
-                            <p class="card-text">Sagheera is a refugee from Syria and came with her husband and 2 children to seek a brighter and safer future for her family.
-                                Sagheera and her family waited 9 years in a refugee camp before they were able to come to the United States in Spring 2022.
+                            <p class="card-text"><br>Sagheera is a refugee from Syria and came with her husband and 2 children to seek a brighter and safer future for her family.
+                                Sagheera and her family waited 9 years in a refugee camp before they were able to come to the United States in Spring 2022.<br>
                                 Sagheera was not allowed to go to school when she was growing up and had been mocked often because she was illiterate, 
-                                and was afraid other students would be unkind to her. Now she is studying with students who are also learning to read for the first time
+                                and was afraid other students would be unkind to her. <br>Now she is studying with students who are also learning to read for the first time
                                 and feels optimistic for their opportunities and hopes that all refugees have the same chance to be resettled and have a bright future like her family does now.
                             </p>
                                 

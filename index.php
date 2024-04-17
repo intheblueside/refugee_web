@@ -53,7 +53,7 @@
 
             <!--section for more info-->
 
-            <section>
+            <section class="body-content">
                 <h2 class="text-center mb-4">Over 26 million people have fled violence <br>or prosecution in their homecountry</h2>
                 <br><br>
                 <div class="container px-4">
@@ -81,7 +81,7 @@
                     <div class="row align-items-center">
                         <!--small heading 2-->
                         <div class="col-md mb-5">
-                            <h4 class="mb-5">Why should we help them?</h4>
+                            <h4 class="mb-3">Why should we help them?</h4>
                             <p>Without livelihood opportunities to help them earn income, refugees struggle to purchase even the most basic necessities, including the food they need to keep their families healthy and strong.
                                 Even donating the smallest thing could benefit refugees tremendously
                             </p>
