@@ -16,7 +16,8 @@
         <style>
             main {
             
-            margin-top: 150px;
+            margin-top: 50px;
+            
             }
 
             .results {
@@ -50,18 +51,17 @@
         $how = $_GET['how'] ?? '';
         $comment = $_GET['comment'] ?? '';
         $amount = $_GET['amount'] ?? ''; 
-        $type = $_GET['type'] ?? '';
-
+        
         ?>
         
         <main>
 
-            <div class="container my-2">
+            <div class="container">
                 <div class="row results px-4">
                     <div class="col-lg-12">
-                        <h2 class="text-center">Thank you for your donation</h2>
+                        <h2 class="text-center">Thank you for your donation to RefugeeRights</h2>
                         <h4 class="text-center">We are sure that this donation will be very beneficial for our refugees.</h4>
-                        <p>Below are the details we received:</p>
+                        <p>Below are the details we received:</p><hr>
 
                         <h5>First Name: <?php echo $first ?> </h5>
                         <h5>Last Name: <?php echo $last ?> </h5>
@@ -69,6 +69,7 @@
                         <h5>Contact No: <?php echo $contact ?></h5>
                         <h5>Amount donated: <?php echo $amount ?> MYR</h5>
 
+                        <hr>
                         <div class="mb-3">
                             <button onclick="window.print()" class="btn btn-primary">Print Summary</button>
                             <a href="index.php" class="btn btn-secondary">Close</a>
