@@ -28,6 +28,12 @@
                 font-family: Helvetica, sans-serif;
             }
 
+            @media print {
+                .btn{ 
+                    visibility: hidden;
+                }
+            }
+
         </style>
 
     </head>
@@ -52,12 +58,12 @@
         
         <main>
 
-            <div class="container my-5">
+            <div class="container my-2">
                 <div class="row results px-4">
                     <div class="col-lg-12">
                         <h2 class="text-center">Thank you for your donation</h2>
-                        <h4>We are sure that this donation will be very beneficial for our refugees.</h4>
-                        <p>Below are the details submitted:</p>
+                        <h4 class="text-center">We are sure that this donation will be very beneficial for our refugees.</h4>
+                        <p>Below are the details we received:</p>
 
                         <h5>First Name: <?php echo $first ?> </h5>
                         <h5>Last Name: <?php echo $last ?> </h5>
@@ -65,7 +71,7 @@
                         <h5>Contact No: <?php echo $contact ?></h5>
                         <h5>Amount donated: <?php echo $amount ?> MYR</h5>
 
-                        <div class="mt-3">
+                        <div class="mb-3">
                             <button onclick="window.print()" class="btn btn-primary">Print Summary</button>
                             <a href="index.php" class="btn btn-secondary">Close</a>
                         </div>
