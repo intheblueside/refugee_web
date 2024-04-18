@@ -103,11 +103,11 @@
                         </h5>
                         <p>What you can acheive with your support?</p>
                         <ul class="ul-amount-info">
-                            <li>$25 - can invite someone to a workshop to learn about their rights and options</li>
-                            <li>$50 - can support a family to navigate the asylum process</li>
-                            <li>$100 - can help free a refugee client from unlawful detention</li>
-                            <li>$150 - can wrap 30 warm, cozy blankets around children affected by conflict</li>
-                            <li>$250 - can train a refugee paralegal to help defend the rights of their community</li>
+                            <li>RM 25 - can invite someone to a workshop to learn about their rights and options</li>
+                            <li>RM 50 - can support a family to navigate the asylum process</li>
+                            <li>RM 100 - can help free a refugee client from unlawful detention</li>
+                            <li>RM 150 - can wrap 10 warm, cozy blankets around children affected by conflict</li>
+                            <li>RM 250 - can train a refugee paralegal to help defend the rights of their community</li>
                         </ul>
                         <p><u>Join us today and make changes for refugees.</u></p>
 
@@ -171,20 +171,20 @@
                                 
                                     <div class="row">
 
-                                        <div class="form-group col-md-6">
-                                            <label for="firstname" class="form-label">First Name</label><span class="error">* <?php echo $firstErr; ?> </span> 
+                                        <div class="form-group col-md-6 p-3">
+                                            <label for="firstname" class="form-label">First Name</label><span class="error"> * <?php echo $firstErr; ?> </span> 
                                             <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="user-first-name">
                                             
                                         </div>
                                         
-                                        <div class="col-md-6">
-                                            <label for="lastname" class="form-label">Last Name</label><span class="error">* <?php echo $lastErr; ?> </span>
+                                        <div class="col-md-6 p-3">
+                                            <label for="lastname" class="form-label">Last Name</label><span class="error"> * <?php echo $lastErr; ?> </span>
                                             <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="user-last-name">
                                             
                                         </div>
                 
-                                        <div class="col-md-6">
-                                            <label for="suffix" class="form-label">Suffix</label><span class="error">* <?php echo $suffixErr; ?> </span>
+                                        <div class="col-md-6 p-3">
+                                            <label for="suffix" class="form-label">Suffix</label><span class="error"> * <?php echo $suffixErr; ?> </span>
                                             <select class="form-select mb-3" id="suffix" name="suffix" aria-label="Default select example">
                                                 <option selected>Select One</option>
                                                 <option value="1">Mr</option>
@@ -195,21 +195,21 @@
                                             
                                         </div>
                                         
-                                        <div class="col-md-6">
-                                            <label for="email" class="form-label">Email address</label><span class="error">* <?php echo $emailErr; ?> </span>
+                                        <div class="col-md-6 p-3">
+                                            <label for="email" class="form-label">Email address</label><span class="error"> * <?php echo $emailErr; ?> </span>
                                             <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                             
                                         </div>
                 
-                                        <div class="col-md-6">
-                                            <label for="contactnum" class="form-label">Contact Number</label><span class="error">* <?php echo $contactErr; ?> </span>
+                                        <div class="col-md-6 p-3">
+                                            <label for="contactnum" class="form-label">Contact Number</label><span class="error"> * <?php echo $contactErr; ?> </span>
                                             <input type="number" class="form-control" id="contactnum" name="contact" aria-describedby="user-contact">
                                             
                                         </div>
                 
-                                        <div class="col-md-6">
-                                            <label for="information" class="form-label">How did you hear about us?</label>
+                                        <div class="col-md-6 p-3">
+                                            <label for="information" class="form-label">How did you hear about us?</label><span class="error"> * <?php echo $howErr; ?> </span>
                                             <select class="form-select mb-6" id="information" name="how" aria-label="Default select example">
                                                 <option selected>Select One</option>
                                                 <option value="1">Search Engine</option>
@@ -219,11 +219,11 @@
                                                 <option value="5">Word of mouth</option>
                                                 <option value="6">Other</option>
                                             </select>
-                                            <span class="error">* <?php echo $howErr; ?> </span>
+                                            
                                         </div>
 
-                                        <div class="col-md-6">
-                                            <label for="comment" class="form-label">Comment</label>
+                                        <div class="col-md-6 p-3">
+                                            <label for="comment" class="form-label">Comment (optional)</label>
                                             <textarea name="comment" rows="5" cols="40" class="form-control" id="comment" name="comment" aria-describedby="user-comment"></textarea>
                                             
                                         </div>
