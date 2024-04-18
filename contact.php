@@ -70,6 +70,12 @@
                     font-size: 16px;
                 }
             }
+
+            #contact-p {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
         </style>
 
     </head>
@@ -86,7 +92,8 @@
         <div class="container">
             <div class="row mt-4">
                 <div class="col-lg-12">
-                    <h4><i>We would love to hear from you, feel free to contact us via any methods as listed below</i></h4><hr>
+                    <p class="text-center" id="contact-p"><i>We would love to hear from you, feel free to contact us via any methods as listed below</i></p>
+                    <hr>
                     <div class="image-fluid">
                         <img src="images/contact.jpg" src="woman calling" style="width: 100%;">
                     </div>
@@ -100,8 +107,8 @@
                     <h4>Are you a refugee?</h4>
                     <ul class="ul-refugee-cont">
                         <li>Please contact our national organization directly by email, phone, or in person.</li>
-                        <li>If your current country of residence is the United States, please visit the Immigration Law Help website for more resources.</li>
-                        <li>Please visit the Refugee Rights in Exile Programme website for more resources.</li>
+                        <li>If you are planning on immigration, please visit the <a href="https://www.lawofficemalaysia.com/immigrate-to-malaysia" target="_blank">Immigration Law Help</a> website for more resources.</li>
+                        <li>If you want to apply for an asylum, please contact <a href="https://help.unhcr.org/caribbean/asylum/unhcr/" target="_blank">UNHCR</a> for furthur details</li>
                     </ul>
                     <hr>
                 </section>
@@ -121,9 +128,9 @@
                                 <div class="card-body">
                                     <h5 class="card-title">RefugeeRights HeadQuarters</h5>
                                     <ul class="ul-location-info row">
-                                        <li class="col-12 col-sm-12"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>35 Jalan Sakura 4, Taman Sakura, 11900 Bayan Lepas, Penang, Malaysia</li>
-                                        <li class="col-12 col-sm-12 col-md-6"><i class="bi bi-telephone-fill" aria-hidden="true"></i><a href="tel:(60) 11 123456789">(60) 11 123456789</a></li>
-                                        <li class="col-12 col-sm-12"><i class="bi bi-envelope-fill" aria-hidden="true"></i><a href="mailto:refugeerights@example.com">refugeerights@example.com</a></li>
+                                        <li class="col-12 col-sm-12"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  35 Jalan Sakura 4, Taman Sakura, 11900 Bayan Lepas, Penang, Malaysia</li>
+                                        <li class="col-12 col-sm-12 col-md-6"><i class="bi bi-telephone-fill" aria-hidden="true"></i><a href="tel:(60) 11 123456789">  (60) 11 12345 6789</a></li>
+                                        <li class="col-12 col-sm-12"><i class="bi bi-envelope-fill" aria-hidden="true"></i><a href="mailto:refugeerights@example.com">  refugeerights@example.com</a></li>
                                     </ul>
                                     
                                 </div>

@@ -101,7 +101,7 @@
                             </div>
 
                             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                                <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                                <h6 class="text-uppercase fw-bold mb-4"><a href="contact.php" class="text-reset">Contact Us</h6>
                                 
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -126,7 +126,7 @@
 
                 <!--copyrights-->
                 <div class="text-center p-4" style="background-color: rgba(0,0,0,0.05);">
-                    &copy; 2024 Ishwari Mani
+                    Copyright&copy; 2024 RefugeeRights | Ishwari Mani
                 </div>
                 
             </footer>
