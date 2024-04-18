@@ -16,11 +16,11 @@ if (isset($_POST["q1"], $_POST["q2"], $_POST["q3"], $_POST["q4"])) {
     }
     // result 
     if ($score >= 3) {
-        $result = "Good Job!!";
+        $result = "Good Job!! You have a good understanding of refugee rights!!";
     }else if ($score <= 3) {
-        $result = "Too bad";
+        $result = "You need to understand more about refugee rights! But you have the spirit!!";
     } else if ($score = 0) {
-        $result = "No attempt yet!";
+        $result = "You lack the understanding! Hope you will try to gain more knowledge about the rights for refugees";
     }
 
     // return result as JSON response
