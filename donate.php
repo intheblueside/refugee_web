@@ -50,6 +50,20 @@
                 object-fit: cover;
             }
 
+            .custom-donate-btn {
+                background-color: #f255c6; 
+                color: #fff; 
+                border: none; 
+                padding: 10px 20px; 
+                border-radius: 5px; 
+                transition: background-color 0.3s ease; 
+            }
+
+            .custom-donate-btn:hover {
+                background-color: #e002a2; 
+                color: #fff;
+            }
+
         </style>
 
     </head>
@@ -89,13 +103,13 @@
                             <img src="images/volunteer.jpg" class="card-img-top custom-card-img" alt="donate">
                             <div class="card-body">
                                 <div class="text-center">
-                                    <h5 class="card-title">Volunteer with us</h5>
+                                    <h5 class="card-title">Volunteer</h5>
                                     <p class="card-text">Volunteers fill vital roles in our national organizations. They offer support to forcibly displaced clients on stages both large and small 
                                         providing advice, encouragement and solidarity in the face of country-wide discrimination. </p>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#volunteerModal">Learn More</a>
+                                <a href="#" class="custom-donate-btn" data-bs-toggle="modal" data-bs-target="#volunteerModal">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -112,7 +126,7 @@
                                 
                             </div>
                             <div class="card-footer d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donateModal">Learn More</a>
+                                <a href="#" class="custom-donate-btn" data-bs-toggle="modal" data-bs-target="#donateModal">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -128,7 +142,7 @@
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#petitionModal">Learn More</a>
+                                <a href="#" class="custom-donate-btn" data-bs-toggle="modal" data-bs-target="#petitionModal">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -143,7 +157,7 @@
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#partnerModal">Learn More</a>
+                                <a href="#" class="custom-donate-btn" data-bs-toggle="modal" data-bs-target="#partnerModal">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -154,7 +168,7 @@
 
         <!--modal popup card 1-->
         <div class="modal fade" id="volunteerModal" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalLabelOne">Volunteering with RefugeeRights</h5>
@@ -162,8 +176,10 @@
 
                     </div>
                     <div class="modal-body">
-                        <img class="image-fluid" src="images/volunteer.jpg" alt="happy children" style="width: 100%;" />
-                        <p class="card-text">Volunteers are vital in our organizations, thus we welcome anyone who is willing to give us a lending hand! 
+                        <div class=" d-flex justify-content-center align-items-start">
+                            <img class="image-fluid" src="images/volunteer.jpg" alt="happy children" style="width: 70%;" />
+                        </div>
+                        <p class="card-text"><br>Volunteers are vital in our organizations, thus we welcome anyone who is willing to give us a lending hand! 
                             Applications are accepted on a rolling basis, with new volunteer advocate programs begin two to three times per year. 
                         </p>
                         <p><i><u>Open Volunteer Positions</u></i></p>
@@ -192,7 +208,7 @@
 
         <!--modal popup card 2-->
         <div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalLabelOne">Donate to RefugeeRights</h5>
@@ -200,8 +216,10 @@
 
                     </div>
                     <div class="modal-body">
-                        <img class="image-fluid" src="images/donate.jpg" alt="happy children" style="width: 100%;" />
-                        <p class="card-text">Donate today, and save a life!
+                        <div class=" d-flex justify-content-center align-items-start">
+                            <img class="image-fluid" src="images/donate.jpg" alt="happy children" style="width: 70%;" />
+                        </div>
+                        <p class="card-text"><br>Donate today, and save a life!
                         </p>
                         <p>You can support refugee rights by donating and giving refugees and their families access to safety and opportunity and also advancing transformative changes to the law that will benefit everyone.</p>
                         <a href="form.php" class="btn btn-primary">Donate Now</a>
@@ -222,7 +240,7 @@
 
         <!--modal popup card 3-->
         <div class="modal fade" id="petitionModal" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalLabelOne">Sign the petition</h5>
@@ -230,8 +248,10 @@
 
                     </div>
                     <div class="modal-body">
-                        <img class="image-fluid" src="images/petition.jpg" alt="happy children" style="width: 100%;" />
-                        <p class="card-text">The right to petition permits us to ask government to take action to address a need or concern. While it doesn't guarantee a desired result
+                        <div class=" d-flex justify-content-center align-items-start">
+                            <img class="image-fluid" src="images/petition.jpg" alt="happy children" style="width: 70%;" />
+                        </div>
+                        <p class="card-text"><br>The right to petition permits us to ask government to take action to address a need or concern. While it doesn't guarantee a desired result
                             it does ensure a  level of participation in the democratic process.
                         </p>
                         <p>Add your name to the petition to support renewing the Malaysian commitment to refugees and a robust increase in annual refugee admissions.</p>
@@ -252,7 +272,7 @@
 
         <!--modal popup card 4-->
         <div class="modal fade" id="partnerModal" tabindex="-1" aria-labelledby="modalLabelOne" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalLabelOne">Partner with RefugeeRights</h5>
@@ -260,8 +280,10 @@
 
                     </div>
                     <div class="modal-body">
-                        <img class="image-fluid" src="images/partner.jpg" alt="happy children" style="width: 100%;" />
-                        <p class="card-text">We know there are many people who share our passion for creating a world where all refugees can live safely, move freely, work and go to school. 
+                        <div class=" d-flex justify-content-center align-items-start">
+                            <img class="image-fluid" src="images/partner.jpg" alt="happy children" style="width: 70%;" />
+                        </div>
+                        <p class="card-text"><br>We know there are many people who share our passion for creating a world where all refugees can live safely, move freely, work and go to school. 
                             We want you to partner with us! Please see the sections below to explore possibilities:
                         </p>
                         <p><i>Funding</i></p>
