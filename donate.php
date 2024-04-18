@@ -19,6 +19,21 @@
             margin-top: 150px;
             }
 
+            #help-p {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .card-body {
+                flex-grow: 1;
+            }
+
             .ul-donation-info {
                 list-style: none;
                 padding-left: 2px;
@@ -29,6 +44,12 @@
                 margin-bottom: 5px;
                 margin-right: 10px; 
             }
+
+            .custom-card-img {
+                height: 300px; 
+                object-fit: cover;
+            }
+
         </style>
 
     </head>
@@ -47,7 +68,7 @@
             <div class="container my-5">
                 <div class="row g-2">
                     <div class="col-lg-12">
-                        <h5>You can support refugee rights by donating to RefugeeRights, giving refugees the help for safety
+                        <p class="text-center" id="help-p">You can support refugee rights by donating to RefugeeRights, giving refugees the help for safety
                                 and opportunity and also bringing them closer to their freedom
                         </h5><hr>
                         <div class="image-fluid">
@@ -65,56 +86,64 @@
                     <!--volunteer card-->
                     <div class="col-lg-3">
                         <div class="card h-100">
-                            <img src="images/volunteer.jpg" class="card-img-top" alt="volunteer">
+                            <img src="images/volunteer.jpg" class="card-img-top custom-card-img" alt="donate">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h5 class="card-title">Volunteer with us</h5>
                                     <p class="card-text">Volunteers fill vital roles in our national organizations. They offer support to forcibly displaced clients on stages both large and small 
                                         providing advice, encouragement and solidarity in the face of country-wide discrimination. </p>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#volunteerModal">Learn More</a>
                                 </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#volunteerModal">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <!--donate card-->
                     <div class="col-lg-3">
                         <div class="card h-100">
-                            <img src="images/donate.jpg" class="card-img-top" alt="volunteer">
+                            <img src="images/donate.jpg" class="card-img-top custom-card-img" alt="donate">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h5 class="card-title">Donate</h5>
                                     <p class="card-text">By donating to RefugeeRights, you will provide refugees with ongoing relief and protection and help them regain hope for a better future.</p>
                                     
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donateModal">Donate Now</a>
                                 </div>
                                 
+                            </div>
+                            <div class="card-footer d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donateModal">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <!--petition card-->
                     <div class="col-lg-3">
                         <div class="card h-100">
-                            <img src="images/petition.jpg" class="card-img-top" alt="volunteer">
+                            <img src="images/petition.jpg" class="card-img-top custom-card-img" alt="petition">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h5 class="card-title">Sign the petition</h5>
                                     <p class="card-text">When a large number of people sign petitions to support refugees, it can create a sense of momentum and pressure 
                                         on the relevant authorities to take action</p>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#petitionModal">Learn More</a>
                                 </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#petitionModal">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <!--partner card-->
                     <div class="col-lg-3">
                         <div class="card h-100">
-                            <img src="images/partner.jpg" class="card-img-top" alt="volunteer">
+                            <img src="images/partner.jpg" class="card-img-top custom-card-img" alt="partner">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h5 class="card-title">Partner with us</h5>
                                     <p class="card-text">We know there are many people who share our passion for creating a world where all refugees can live safely, move freely, work and go to school. We want you to partner with us! </p>
-                                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#partnerModal">Learn More</a>
                                 </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#partnerModal">Learn More</a>
                             </div>
                         </div>
                     </div>
