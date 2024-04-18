@@ -46,6 +46,14 @@
                 background-color: #0056b3; 
             }
 
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                
+            }
+
         </style>
 
     </head>
@@ -243,6 +251,8 @@
                     </div>
                   
                     </div>
+                    <!--button top-->
+                    <button onclick="topFunction()" class="btn btn-danger btn-floating btn-lg" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
                 </div>
             </section>
 
@@ -319,6 +329,29 @@
 
 
             <script>
+
+                // button id        
+                let mybutton = document.getElementById("myBtn");
+
+                // show button when user scrolls
+                window.onscroll = function() {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+
                 function closeModal() {
                     document.getElementById("quizModal").style.display = "none";
                     

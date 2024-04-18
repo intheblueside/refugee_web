@@ -171,7 +171,7 @@
                     </div>
                 </div>
 
-                <!-- Back to top button -->
+                <!-- button to top -->
                 <button onclick="topFunction()" class="btn btn-danger btn-floating btn-lg" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
             </div>
         </section>
@@ -333,11 +333,10 @@
     </main>
 
     <script>
-        //Get the button
-                
+        // button id        
         let mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
+        // show button when user scrolls
         window.onscroll = function() {
             scrollFunction()
         };

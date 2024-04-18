@@ -70,6 +70,14 @@
                 }
             }
 
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                
+            }
+
         </style>
     </head>
 
@@ -166,7 +174,11 @@
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div> 
+                
+                <!--button scroll up-->
+                <button onclick="topFunction()" class="btn btn-danger btn-floating btn-lg" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+                
             </div>
 
 
@@ -260,6 +272,29 @@
 
         <!--js-->
         <script>
+            // button id        
+            let mybutton = document.getElementById("myBtn");
+
+            // show button when user scrolls
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+
             // to trigger modal
             document.addEventListener("DOMContentLoaded", function () {
                 const imageLink1 = document.querySelector(".image-link1");
