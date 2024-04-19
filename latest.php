@@ -18,10 +18,61 @@
             
             margin-top: 150px;
             }
+
             #crisis-p {
                 font-size: 20px;
                 margin-bottom: 30px;
             }
+
+            .btn-donate {
+                background-color: #f44336; 
+                color: white;
+                border: none; 
+                padding: 10px 20px; 
+                border-radius: 25px;
+                font-family: Helvetica, sans-serif; 
+                font-size: 18px; 
+                text-decoration: none; 
+                cursor: pointer; 
+                transition: background-color 0.3s, color 0.3s; 
+            }
+
+            .btn-donate:hover {
+                background-color: #d32f2f; 
+                color: white; 
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+            }
+
+            @media (min-width: 768px) {
+                .btn-donate {
+                    font-size: 20px; 
+                    padding: 15px 30px; 
+                }
+            }
+
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                
+            }
+
+            .btn-more {
+                font-family: Helvetica, sans-serif;
+                background-color: #f255c6; 
+                color: #fff; 
+                border: none; 
+                padding: 10px 20px; 
+                border-radius: 5px; 
+                transition: background-color 0.3s ease; 
+            }
+
+            .btn-more:hover {
+                background-color: #e002a2; 
+                color: #fff;
+            }
+
         </style>
 
     </head>
@@ -38,8 +89,8 @@
                     <div class="col-lg-12">
                 
                         <h2 class="text-center display-4 p-2">What Refugee Crisis is Happening in the World Right Now?</h2>
-                        <p class="text-center mx-auto" id="crisis-p">There are so many humanitarian crises happening in the world right now, and it is necessary for us
-                        to help them as much as we can, as the saying goes, who is left to help humans other than humans?</p>
+                        <p class="text-center mx-auto" id="crisis-p">In today's world, numerous humanitarian crises demand our attention, emphasizing the vital need for us to extend a helping hand wherever we can. 
+                            After all, who else but humans can truly understand and aid fellow humans in times of need?"</p>
                             
                         <div class="row mt-5">
                             <div class="col-lg-12">
@@ -57,7 +108,7 @@
                                 </p>
                                 
                                 <div class="mt-3">
-                                    <a href="https://reporting.unhcr.org/operational/situations/myanmar-situation" target="_blank" class="btn btn-primary">Learn More</a>
+                                    <a href="https://reporting.unhcr.org/operational/situations/myanmar-situation" target="_blank" class="btn-more">Learn More  <i class="bi bi-arrow-right-circle-fill"></i></a>
                                 </div>
                         
                             </div>
@@ -80,7 +131,7 @@
                                 </p>
                             
                                 <div class="mt-3">
-                                    <a href="https://www.unrefugees.org/news/syria-refugee-crisis-explained/" target="_blank" class="btn btn-primary">Learn More</a>
+                                    <a href="https://www.unrefugees.org/news/syria-refugee-crisis-explained/" target="_blank" class="btn-more">Learn More  <i class="bi bi-arrow-right-circle-fill"></i></a>
                                 </div>
                         
                             </div>
@@ -103,7 +154,7 @@
                                     According to official statistics, about 1.1 million Ukrainian refugees currently reside in Germany. 
                                 </p>
                                 <div class="mt-3">
-                                    <a href="https://www.unrefugees.org/emergencies/ukraine/" target="_blank" class="btn btn-primary">Learn More</a>
+                                    <a href="https://www.unrefugees.org/emergencies/ukraine/" target="_blank" class="btn-more">Learn More  <i class="bi bi-arrow-right-circle-fill"></i></a>
                                 </div>
                         
                             </div>
@@ -126,7 +177,7 @@
                                     Yemen is facing the worst humanitarian crises in the world today. Even so, the country still hosts more than 200,000 refugees from neighbouring Somalia and Ethiopia. 
                                 </p>
                                 <div class="mt-3">
-                                    <a href="https://www.unrefugees.org/emergencies/yemen/" target="_blank" class="btn btn-primary">Learn More</a>
+                                    <a href="https://www.unrefugees.org/emergencies/yemen/" target="_blank" class="btn-more">Learn More  <i class="bi bi-arrow-right-circle-fill"></i></a>
                                 </div>
                         
                             </div>
@@ -152,7 +203,7 @@
 
                                 </p>
                                 <div class="mt-3">
-                                    <a href="https://www.unhcr.org/countries/afghanistan" target="_blank" class="btn btn-primary">Learn More</a>
+                                    <a href="https://www.unhcr.org/countries/afghanistan" target="_blank" class="btn-more">Learn More  <i class="bi bi-arrow-right-circle-fill"></i></a>
                                 </div>
                         
                             </div>
@@ -169,8 +220,34 @@
                     </div>
                 </div>
             </div>
+            <!--button scroll up-->
+            <button onclick="topFunction()" class="btn btn-danger btn-floating btn-lg" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
             
         </main>
+
+        <script>
+            // button id        
+            let mybutton = document.getElementById("myBtn");
+
+            // show button when user scrolls
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
         
 
         <!--footer take file-->
