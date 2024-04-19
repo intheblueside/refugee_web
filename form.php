@@ -70,7 +70,6 @@
             $amountErr = "Please enter an amount!";
         } else {
             $amount = test_input($_POST["amount"]);
-            echo $amount;
         }
 
         // check if all validation is complete
@@ -173,13 +172,13 @@
 
                                         <div class="form-group col-md-6 p-3">
                                             <label for="firstname" class="form-label">First Name</label><span class="error"> * <?php echo $firstErr; ?> </span> 
-                                            <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="user-first-name">
+                                            <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="user-first-name" value="<?php echo isset($_POST['firstname']) ? htmlspecialchars($_POST['firstname']) : ''; ?>">
                                             
                                         </div>
                                         
                                         <div class="col-md-6 p-3">
                                             <label for="lastname" class="form-label">Last Name</label><span class="error"> * <?php echo $lastErr; ?> </span>
-                                            <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="user-last-name">
+                                            <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="user-last-name" value="<?php echo isset($_POST['lastname']) ? htmlspecialchars($_POST['lastname']) : ''; ?>">
                                             
                                         </div>
                 
@@ -197,14 +196,14 @@
                                         
                                         <div class="col-md-6 p-3">
                                             <label for="email" class="form-label">Email address</label><span class="error"> * <?php echo $emailErr; ?> </span>
-                                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>">
                                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                             
                                         </div>
                 
                                         <div class="col-md-6 p-3">
                                             <label for="contactnum" class="form-label">Contact Number</label><span class="error"> * <?php echo $contactErr; ?> </span>
-                                            <input type="number" class="form-control" id="contactnum" name="contact" aria-describedby="user-contact">
+                                            <input type="number" class="form-control" id="contactnum" name="contact" aria-describedby="user-contact" value="<?php echo isset($_POST['contact']) ? htmlspecialchars($_POST['contact']) : ''; ?>">
                                             
                                         </div>
                 
@@ -224,7 +223,7 @@
 
                                         <div class="col-md-6 p-3">
                                             <label for="comment" class="form-label">Comment (optional)</label>
-                                            <textarea name="comment" rows="5" cols="40" class="form-control" id="comment" name="comment" aria-describedby="user-comment"></textarea>
+                                            <textarea name="comment" rows="5" cols="40" class="form-control" id="comment" name="comment" aria-describedby="user-comment" ></textarea>
                                             
                                         </div>
                                         
