@@ -21,7 +21,7 @@
             .button-quiz {
                 color: #fff;
                 border: none;
-                background-color: #f255c6;
+                background-color: #0056b3;
                 font-size: 16px;
                 border-radius: 10px;
                 transition: background-color 0.3 ease;
@@ -29,7 +29,7 @@
             }
 
             .button-quiz:hover {
-                background-color: #0056b3; 
+                background-color: #7667e6;
             }
 
             .button-submit {
@@ -52,6 +52,21 @@
                 bottom: 20px;
                 right: 20px;
                 
+            }
+
+            .btn-more {
+                font-family: Helvetica, sans-serif;
+                background-color: #f255c6; 
+                color: #fff; 
+                border: none; 
+                padding: 10px 20px; 
+                border-radius: 5px; 
+                transition: background-color 0.3s ease; 
+            }
+
+            .btn-more:hover {
+                background-color: #e002a2; 
+                color: #fff;
             }
 
         </style>
@@ -126,7 +141,7 @@
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                    <a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights" target="_blank" class="btn btn-primary">Learn More</a>
+                                    <a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights" target="_blank" class="btn-more">Learn More  <i class="bi bi-arrow-right-circle-fill"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +201,7 @@
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                    <a href="https://www.unhcr.org/my/about-unhcr/who-we-are/1951-refugee-convention" target="_blank" class="btn btn-primary">Learn More</a>
+                                    <a href="https://www.unhcr.org/my/about-unhcr/who-we-are/1951-refugee-convention" target="_blank" class="btn-more">Learn More  <i class="bi bi-arrow-right-circle-fill"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +254,7 @@
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                    <a href="https://www.ohchr.org/en/instruments-mechanisms/instruments/international-convention-protection-rights-all-migrant-workers" target="_blank" class="btn btn-primary">Learn More</a>
+                                    <a href="https://www.ohchr.org/en/instruments-mechanisms/instruments/international-convention-protection-rights-all-migrant-workers" target="_blank" class="btn-more">Learn More  <i class="bi bi-arrow-right-circle-fill"></i></a>
                                     </div>
                                 </div>
 
