@@ -90,7 +90,7 @@
                 
                         <h2 class="text-center display-4 p-2">What Refugee Crisis is Happening in the World Right Now?</h2>
                         <p class="text-center mx-auto" id="crisis-p">In today's world, numerous humanitarian crises demand our attention, emphasizing the vital need for us to extend a helping hand wherever we can. 
-                            After all, who else but humans can truly understand and aid fellow humans in times of need?"</p>
+                            After all, who else but humans can truly understand and aid fellow humans in times of need?</p>
                             
                         <div class="row mt-5">
                             <div class="col-lg-12">
