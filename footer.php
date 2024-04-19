@@ -80,7 +80,7 @@
                                     <a href="rights.php" class="text-reset">Our Rights</a>
                                 </p>
                                 <p>
-                                    <a href="contact.php" class="text-reset">About Us</a>
+                                    <a href="latest.php" class="text-reset">Refugee Crisis</a>
                                 </p>
                             </div>
 

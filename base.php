@@ -55,6 +55,9 @@
                                 <a class="nav-link" href="rights.php">Our Rights</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="latest.php">Crisis Now</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="donate.php">Donate ♡</a>
                             </li>
                             <li class="nav-item">
