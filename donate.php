@@ -269,8 +269,8 @@
                         <p>Add your name to the petition to support renewing the Malaysian commitment to refugees and a robust increase in annual refugee admissions.</p>
                         <p>Below are a few petition's that would love to get your support!</p>
                         <ul>
-                            <li> Give Refugees the Right to Work in Malaysia -> <a href="https://www.change.org/p/the-government-of-malaysia-refugees-right-to-work-in-malaysia">Sign Here</a></li>
-                            <li> Hold a referendum on the Refugee Convention referendum at the general election -> <a href="https://petition.parliament.uk/petitions/648938">Sign Here</a></li>
+                            <li> Give Refugees the Right to Work in Malaysia -> <a href="https://www.change.org/p/the-government-of-malaysia-refugees-right-to-work-in-malaysia" target="_blank">Sign Here</a></li>
+                            <li> Hold a referendum on the Refugee Convention referendum at the general election -> <a href="https://petition.parliament.uk/petitions/648938" target="_blank">Sign Here</a></li>
                             <li> Provide advocacy for refugees to protect them in court -> <a href="#">Sign Here</a></li>
                         </ul>
                             
