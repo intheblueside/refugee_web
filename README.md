@@ -1,13 +1,13 @@
 # Refugee Rights 
 
-It is a beginner made website that showcases about refugees and how we can help them. 
+A beginner made website that showcases about refugees and how we can help them. 
 
 <hr>
 It is developed using HTML, CSS, Bootstrap 5, JavaScript and PHP
 
 <hr>
 
-# It consists of 6 pages
+# Content
 1. Welcome Page - brief description about the website
 2. Our Stories - showcases some stories from refugees around the world
 3. Our Rights - displays soem of the rights that refugees have, includes a small interactive quiz section that user can test their understanding
